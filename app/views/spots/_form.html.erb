@@ -1,0 +1,33 @@
+<%= form_for(@spot) do |f| %>
+  <% if @spot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@spot.errors.count, "error") %> prohibited this account from being saved:</h2>
+
+      <ul>
+      <% @spot.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :spot_id %><br />
+    <%= f.text_field :spot_id %>
+  </div>
+  <div class="field">
+    <%= f.label :local %><br />
+    <%= f.text_field :local %>
+  </div>
+  <div class="field">
+    <%= f.label :start_time %><br />
+    <%= f.text_field :start_time %>
+  </div>
+  <div class="field">
+    <%= f.label :end_time %><br />
+    <%= f.text_field :end_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

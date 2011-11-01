@@ -1,0 +1,10 @@
+es:
+  errors:
+    messages:
+      email_format: "is not formatted properly"
+  login: "Login"
+  logout: "Logout"
+  username: "Username"
+  password: "Password"
+  email: "Email"
+  accountcreatedsuccess: "Conta criada com sucesso."

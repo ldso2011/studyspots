@@ -1,0 +1,23 @@
+<h1>Join</h1>
+
+<%= form_for @account_spot, :validate => true do |f| %>
+  <% if @account_spot.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @account_spot.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p>
+    <label for="owner_id">User:</label>
+    <%= f.collection_select :account_id, Profile.find(:all), :account_id, :first_name, :prompt => "Select a User" %>
+  </p>
+  <p>
+    <label for="spot_id">User:</label>
+    <%= f.collection_select :spot_id, Spot.find(:all), :spot_id, :local, :prompt => "Select a Local" %>
+  </p>
+  <p class="button"><%= f.submit %></p>
+<% end %>

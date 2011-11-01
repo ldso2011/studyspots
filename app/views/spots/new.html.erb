@@ -1,0 +1,31 @@
+<h1>Novo spot</h1>
+
+<%= form_for @spot, :validate => true do |f| %>
+  <% if @spot.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @spot.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p>
+    <label for="account_id">User:</label>
+    <%= f.collection_select :owner_id, Profile.find(:all), :account_id, :first_name, :prompt => "Select a User" %>
+  </p>
+  <p>
+    <%= f.label :local %><br />
+    <%= f.text_field :local %>
+  </p>
+  <p>
+    <%= f.label :start_time %><br />
+    <%= f.text_field :start_time %>
+  </p>
+  <p>
+    <%= f.label :end_time %><br />
+    <%= f.text_field :end_time %>
+  </p>
+  <p class="button"><%= f.submit %></p>
+<% end %>
