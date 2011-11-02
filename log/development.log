@@ -50339,3 +50339,1259 @@ Migrating to CreateAccountSpots (20111101162051)
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("accounts_spots")[0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("profiles")
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("spots")[0m
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 23:45:05 +0000
+  Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" [0m
+Rendered accounts/index.html.erb within layouts/application (12.9ms)
+Compiled application.css  (1ms)  (pid 24333)
+Compiled account_spots.css  (6ms)  (pid 24333)
+Compiled accounts.css  (0ms)  (pid 24333)
+Compiled profiles.css  (2ms)  (pid 24333)
+Compiled spots.css  (0ms)  (pid 24333)
+Compiled application.js  (4ms)  (pid 24333)
+Compiled jquery.js  (18ms)  (pid 24333)
+Compiled jquery_ujs.js  (0ms)  (pid 24333)
+Compiled rails.validations.js  (0ms)  (pid 24333)
+Compiled account_spots.js  (99ms)  (pid 24333)
+Compiled accounts.js  (95ms)  (pid 24333)
+Compiled profiles.js  (96ms)  (pid 24333)
+Compiled spots.js  (95ms)  (pid 24333)
+Completed 200 OK in 571ms (Views: 570.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /account_spots.css - 200 OK (29ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /spots.css - 200 OK (4ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /accounts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /profiles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /account_spots.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /rails.validations.js - 200 OK (1ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /accounts.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /spots.js - 200 OK (1ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /profiles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /rails.validations.custom - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-01 23:45:06 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+  Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" 
+Rendered accounts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /account_spots.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /spots.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /rails.validations.custom - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-01 23:45:15 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/en/spots/new" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+  Processing by SpotsController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT "profiles".* FROM "profiles" [0m
+Rendered spots/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-01 23:45:23 +0000
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-01 23:45:24 +0000
+Served asset /rails.validations.custom - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:24 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-01 23:45:24 +0000
+Served asset /rails.validations.custom - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/en/accounts/new" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+  Processing by AccountsController#new as HTML
+  Parameters: {"locale"=>"en"}
+Rendered accounts/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-01 23:45:32 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.3ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-01 23:45:33 +0000
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-01 23:45:33 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-01 23:45:33 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 23:46:24 +0000
+  Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" 
+Rendered accounts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-01 23:46:24 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /spots.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /rails.validations.custom - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /defaults.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.3ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-01 23:46:25 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+  Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" [0m
+Rendered accounts/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 94ms (Views: 93.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /account_spots.css - 304 Not Modified (45ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /accounts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /profiles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /spots.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /rails.validations.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /account_spots.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /accounts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /profiles.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /spots.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /defaults.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-01 23:46:44 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/en/accounts/new" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+  Processing by AccountsController#new as HTML
+  Parameters: {"locale"=>"en"}
+Rendered accounts/new.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 58ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /account_spots.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /profiles.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /rails.validations.custom - 404 Not Found (7ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.2ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:00:24 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/en/spots/new" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+  Processing by SpotsController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mProfile Load (0.3ms)[0m  SELECT "profiles".* FROM "profiles" 
+Rendered spots/new.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /defaults.js - 404 Not Found (8ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.3ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.7ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:00:28 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/spots" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+  Processing by SpotsController#index as HTML
+  [1m[36mSpot Load (0.0ms)[0m  [1mSELECT "spots".* FROM "spots" [0m
+Rendered spots/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-02 00:00:35 +0000
+Served asset /defaults.js - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:36 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:00:36 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+  Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" 
+Rendered accounts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /accounts.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:00:40 +0000
+Served asset /rails.validations.custom - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-11-02 00:38:25 +0000
+  Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" [0m
+Rendered accounts/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 105ms (Views: 104.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:38:25 +0000
+Served asset /account_spots.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-02 00:38:26 +0000
+Served asset /accounts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-02 00:38:26 +0000
+Served asset /profiles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-02 00:38:26 +0000
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-02 00:38:26 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:38:26 +0000
+Served asset /rails.validations.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:38:26 +0000
+Served asset /account_spots.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:38:26 +0000
+Served asset /spots.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-02 00:38:26 +0000
+Served asset /accounts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:38:26 +0000
+Served asset /spots.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-02 00:38:26 +0000
+Served asset /profiles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:38:26 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:38:26 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+  Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" 
+Rendered accounts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /spots.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:35 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-02 00:39:38 +0000
+  Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" [0m
+Rendered accounts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:39:39 +0000
+Served asset /rails.validations.custom - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+  Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" 
+Rendered accounts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /rails.validations.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /profiles.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:39:40 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/en/spots/new" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+  Processing by SpotsController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT "profiles".* FROM "profiles" [0m
+Rendered spots/new.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /rails.validations.custom - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.custom" for 127.0.0.1 at 2011-11-02 00:39:42 +0000
+Served asset /rails.validations.custom - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.validations.custom"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+  Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" [0m
+Rendered accounts/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 102ms (Views: 100.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+Served asset /account_spots.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+Served asset /accounts.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+Served asset /jquery.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+Served asset /profiles.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+Served asset /spots.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+Served asset /rails.validations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+Served asset /account_spots.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+Served asset /profiles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+Served asset /spots.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+Served asset /accounts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
