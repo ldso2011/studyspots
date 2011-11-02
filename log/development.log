@@ -51595,3 +51595,71 @@ Served asset /accounts.js - 304 Not Modified (1ms)
 
 Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:43:12 +0000
 Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-02 00:51:44 +0000
+  Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" [0m
+Rendered accounts/index.html.erb within layouts/application (17.0ms)
+Compiled application.css  (3ms)  (pid 25441)
+Compiled account_spots.css  (9ms)  (pid 25441)
+Compiled accounts.css  (0ms)  (pid 25441)
+Compiled profiles.css  (0ms)  (pid 25441)
+Compiled spots.css  (0ms)  (pid 25441)
+Compiled application.js  (4ms)  (pid 25441)
+Compiled jquery.js  (1ms)  (pid 25441)
+Compiled jquery_ujs.js  (0ms)  (pid 25441)
+Compiled rails.validations.js  (0ms)  (pid 25441)
+Compiled account_spots.js  (121ms)  (pid 25441)
+Compiled accounts.js  (110ms)  (pid 25441)
+Compiled profiles.js  (119ms)  (pid 25441)
+Compiled spots.js  (158ms)  (pid 25441)
+Completed 200 OK in 730ms (Views: 728.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:51:45 +0000
+Served asset /account_spots.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-02 00:51:45 +0000
+Served asset /profiles.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-02 00:51:45 +0000
+Served asset /spots.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-02 00:51:45 +0000
+Served asset /accounts.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-02 00:51:45 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-02 00:51:45 +0000
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:51:45 +0000
+Served asset /rails.validations.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:51:45 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-02 00:51:45 +0000
+Served asset /accounts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-02 00:51:45 +0000
+Served asset /profiles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-02 00:51:45 +0000
+Served asset /spots.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2011-11-02 00:51:45 +0000
+Served asset /rails.validations.js - 304 Not Modified (0ms)
