@@ -30,7 +30,7 @@ end
 group :production do
   # gems specifically for Heroku go here
   gem "pg"
-  gem 'therubyracer'
+  gem 'therubyracer-heroku', '0.8.1.pre3'
 end
 
 
