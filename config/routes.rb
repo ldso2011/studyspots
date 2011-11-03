@@ -3,10 +3,11 @@ StudySpots::Application.routes.draw do
   Possible_locales = /en|pt|es/
   
   match "/:locale" => "accounts#index", :locale => Possible_locales
-  
+  match "/:locale/accounts/email/:id" => "accounts#email"
   match "/:locale/spots/owner/:id" => "spots#owner"
   match "/:locale/spots/join/" => "spots#join"
   match "/:locale/spots/joined/:id" => "spots#joined"
+  match "/:locale/spots/inspot/:id" => "spots#inspot"
   
   root :to=> "accounts#index", :locale => Possible_locales
   

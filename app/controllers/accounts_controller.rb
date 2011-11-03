@@ -94,4 +94,14 @@ class AccountsController < ApplicationController
     end
   end
 
+  # GET /accounts/email/1
+  # GET /accounts/email/1.json
+  def email
+    @account = Account.find_by_email(params[:id])
+    respond_to do |format|
+      format.html # email.html.erb
+      format.json { render json: @account.account_id }
+    end
+  end
+
 end
