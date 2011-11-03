@@ -56118,3 +56118,524 @@ Served asset /profiles.js - 304 Not Modified (0ms)
 
 Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 15:39:48 +0000
 Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-03 16:14:19 +0000
+  Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" [0m
+Rendered accounts/index.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 317ms (Views: 316.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 16:14:20 +0000
+Served asset /accounts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:20 +0000
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 16:14:20 +0000
+Served asset /profiles.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:20 +0000
+Served asset /account_spots.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:20 +0000
+Served asset /accounts.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:20 +0000
+Served asset /spots.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:20 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:20 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 16:14:20 +0000
+Served asset /account_spots.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 16:14:20 +0000
+Served asset /spots.css - 304 Not Modified (3ms)
+
+
+Started GET "/en/spots/owner/01a3af40-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:14:24 +0000
+  Processing by SpotsController#owner as HTML
+  Parameters: {"locale"=>"en", "id"=>"01a3af40-05a6-11e1-ba60-020000881993"}
+  [1m[35mSpot Load (0.0ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."owner_id" = '01a3af40-05a6-11e1-ba60-020000881993'
+Rendered spots/owner.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 116ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 16:14:24 +0000
+Served asset /profiles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:24 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:24 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:24 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 16:14:24 +0000
+Served asset /accounts.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 16:14:24 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 16:14:24 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:24 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:24 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:24 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:14:27 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[36mSpot Load (0.0ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1[0m  [["spot_id", "5652ea10-05a6-11e1-ba60-020000881993"]]
+Rendered spots/show.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 89ms (Views: 87.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 16:14:27 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 16:14:27 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:27 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:27 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 16:14:27 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:27 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:27 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:27 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 16:14:27 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 16:14:27 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/j5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:14:32 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"j5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mSpot Load (0.0ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1  [["spot_id", "j5652ea10-05a6-11e1-ba60-020000881993"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Spot with spot_id=j5652ea10-05a6-11e1-ba60-020000881993):
+  app/controllers/spots_controller.rb:16:in `show'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/en/spots/joi5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:14:32 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"joi5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[36mSpot Load (1.0ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1[0m  [["spot_id", "joi5652ea10-05a6-11e1-ba60-020000881993"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Spot with spot_id=joi5652ea10-05a6-11e1-ba60-020000881993):
+  app/controllers/spots_controller.rb:16:in `show'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/en/spots/i5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:14:34 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"i5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mSpot Load (0.0ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1  [["spot_id", "i5652ea10-05a6-11e1-ba60-020000881993"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Spot with spot_id=i5652ea10-05a6-11e1-ba60-020000881993):
+  app/controllers/spots_controller.rb:16:in `show'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/en/spots/in5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:14:34 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"in5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[36mSpot Load (0.0ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1[0m  [["spot_id", "in5652ea10-05a6-11e1-ba60-020000881993"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Spot with spot_id=in5652ea10-05a6-11e1-ba60-020000881993):
+  app/controllers/spots_controller.rb:16:in `show'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/en/spots/ins5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:14:35 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"ins5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mSpot Load (1.0ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1  [["spot_id", "ins5652ea10-05a6-11e1-ba60-020000881993"]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Spot with spot_id=ins5652ea10-05a6-11e1-ba60-020000881993):
+  app/controllers/spots_controller.rb:16:in `show'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/en/spots/inspo5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:14:36 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"inspo5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[36mSpot Load (0.0ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1[0m  [["spot_id", "inspo5652ea10-05a6-11e1-ba60-020000881993"]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Spot with spot_id=inspo5652ea10-05a6-11e1-ba60-020000881993):
+  app/controllers/spots_controller.rb:16:in `show'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/en/spots/inspot5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:14:36 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"inspot5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mSpot Load (1.0ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1  [["spot_id", "inspot5652ea10-05a6-11e1-ba60-020000881993"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Spot with spot_id=inspot5652ea10-05a6-11e1-ba60-020000881993):
+  app/controllers/spots_controller.rb:16:in `show'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:14:38 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[36mAccountSpot Load (0.0ms)[0m  [1mSELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'[0m
+Completed 500 Internal Server Error in 33ms
+
+NoMethodError (undefined method `>' for nil:NilClass):
+  app/controllers/spots_controller.rb:120:in `inspot'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:15:05 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 500 Internal Server Error in 28ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.insert):
+  app/controllers/spots_controller.rb:122:in `block in inspot'
+  app/controllers/spots_controller.rb:120:in `each'
+  app/controllers/spots_controller.rb:120:in `inspot'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:17:13 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 500 Internal Server Error in 41ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.insert):
+  app/controllers/spots_controller.rb:122:in `block in inspot'
+  app/controllers/spots_controller.rb:120:in `each'
+  app/controllers/spots_controller.rb:120:in `inspot'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:22:35 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (1.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 500 Internal Server Error in 42ms
+
+NoMethodError (undefined method `insert' for {}:Hash):
+  app/controllers/spots_controller.rb:122:in `block in inspot'
+  app/controllers/spots_controller.rb:120:in `each'
+  app/controllers/spots_controller.rb:120:in `inspot'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:22:39 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 500 Internal Server Error in 42ms
+
+NoMethodError (undefined method `insert' for {}:Hash):
+  app/controllers/spots_controller.rb:122:in `block in inspot'
+  app/controllers/spots_controller.rb:120:in `each'
+  app/controllers/spots_controller.rb:120:in `inspot'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:22:39 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 500 Internal Server Error in 26ms
+
+NoMethodError (undefined method `insert' for {}:Hash):
+  app/controllers/spots_controller.rb:122:in `block in inspot'
+  app/controllers/spots_controller.rb:120:in `each'
+  app/controllers/spots_controller.rb:120:in `inspot'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:26:00 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (1.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 500 Internal Server Error in 41ms
+
+NoMethodError (private method `puts' called for {}:Hash):
+  app/controllers/spots_controller.rb:122:in `block in inspot'
+  app/controllers/spots_controller.rb:120:in `each'
+  app/controllers/spots_controller.rb:120:in `inspot'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:26:31 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (1.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 500 Internal Server Error in 25ms
+
+NoMethodError (undefined method `push' for {}:Hash):
+  app/controllers/spots_controller.rb:122:in `block in inspot'
+  app/controllers/spots_controller.rb:120:in `each'
+  app/controllers/spots_controller.rb:120:in `inspot'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:26:32 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (1.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 500 Internal Server Error in 40ms
+
+NoMethodError (undefined method `push' for {}:Hash):
+  app/controllers/spots_controller.rb:122:in `block in inspot'
+  app/controllers/spots_controller.rb:120:in `each'
+  app/controllers/spots_controller.rb:120:in `inspot'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:26:33 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 500 Internal Server Error in 42ms
+
+NoMethodError (undefined method `push' for {}:Hash):
+  app/controllers/spots_controller.rb:122:in `block in inspot'
+  app/controllers/spots_controller.rb:120:in `each'
+  app/controllers/spots_controller.rb:120:in `inspot'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:27:01 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (1.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 500 Internal Server Error in 42ms
+
+NoMethodError (undefined method `+' for {}:Hash):
+  app/controllers/spots_controller.rb:122:in `block in inspot'
+  app/controllers/spots_controller.rb:120:in `each'
+  app/controllers/spots_controller.rb:120:in `inspot'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:27:02 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 500 Internal Server Error in 26ms
+
+NoMethodError (undefined method `+' for {}:Hash):
+  app/controllers/spots_controller.rb:122:in `block in inspot'
+  app/controllers/spots_controller.rb:120:in `each'
+  app/controllers/spots_controller.rb:120:in `inspot'
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993" for 127.0.0.1 at 2011-11-03 16:33:27 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+  [1m[35mSpot Load (0.0ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = '56644f30-05a6-11e1-ba60-020000881993' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Rendered spots/inspot.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 54ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 16:33:27 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 16:33:27 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 16:33:27 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 16:33:27 +0000
+Served asset /spots.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 16:33:27 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 16:33:27 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 16:33:27 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 16:33:27 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 16:33:27 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 16:33:27 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993." for 127.0.0.1 at 2011-11-03 16:34:03 +0000
+
+ActionController::RoutingError (No route matches [GET] "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993."):
+  
+
+Rendered heroku/ruby/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993.j" for 127.0.0.1 at 2011-11-03 16:34:04 +0000
+  Processing by SpotsController#inspot as 
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (1.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 406 Not Acceptable in 27ms
+
+
+Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993.json" for 127.0.0.1 at 2011-11-03 16:34:04 +0000
+  Processing by SpotsController#inspot as JSON
+  Parameters: {"locale"=>"en", "id"=>"5652ea10-05a6-11e1-ba60-020000881993"}
+  [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
+  [1m[36mAccount Load (1.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
+Completed 200 OK in 98ms (Views: 72.0ms | ActiveRecord: 1.0ms)

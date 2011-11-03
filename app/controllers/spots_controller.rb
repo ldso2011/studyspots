@@ -116,10 +116,14 @@ class SpotsController < ApplicationController
   # GET /spots/inspot/1.json
   def inspot
     @account_spot = AccountSpot.find_all_by_spot_id (params[:id])
-    puts @account_spot
+    @accountslist = []
+    @account_spot.each do |spot| 
+      @account = Account.find_by_account_id (spot.account_id )
+      @accountslist << @account
+    end
     respond_to do |format|
       format.html # inspot.html.erb
-      format.json { render json: @account_spot }
+      format.json { render json: @accountslist }
     end
   end
 
