@@ -56639,3 +56639,1368 @@ Started GET "/en/spots/inspot/5652ea10-05a6-11e1-ba60-020000881993.json" for 127
   [1m[35mAccountSpot Load (0.0ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5652ea10-05a6-11e1-ba60-020000881993'
   [1m[36mAccount Load (1.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '01a3af40-05a6-11e1-ba60-020000881993' LIMIT 1[0m
 Completed 200 OK in 98ms (Views: 72.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/en/spots/4e2e8b96-0588-11e1-b426-12313926dd7c" for 127.0.0.1 at 2011-11-03 17:21:31 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"4e2e8b96-0588-11e1-b426-12313926dd7c"}
+  [1m[36mSpot Load (0.3ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1[0m  [["spot_id", "4e2e8b96-0588-11e1-b426-12313926dd7c"]]
+Rendered spots/show.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 147ms (Views: 144.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:21:31 +0000
+Served asset /account_spots.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:31 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:21:31 +0000
+Served asset /spots.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:21:31 +0000
+Served asset /accounts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:21:31 +0000
+Served asset /profiles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:31 +0000
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:31 +0000
+Served asset /account_spots.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:31 +0000
+Served asset /accounts.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:31 +0000
+Served asset /profiles.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:31 +0000
+Served asset /spots.js - 304 Not Modified (1ms)
+
+
+Started GET "/en/spots/4e2e8b96-0588-11e1-b426-12313926dd7c7777777777777777777777777777777777777777777777777777777////////////////77777777777777777777777777777777777777777777" for 127.0.0.1 at 2011-11-03 17:21:39 +0000
+
+ActionController::RoutingError (No route matches [GET] "/en/spots/4e2e8b96-0588-11e1-b426-12313926dd7c7777777777777777777777777777777777777777777777777777777/77777777777777777777777777777777777777777777"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/en/spots/" for 127.0.0.1 at 2011-11-03 17:21:55 +0000
+  Processing by SpotsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mSpot Load (0.1ms)[0m  SELECT "spots".* FROM "spots" 
+Rendered spots/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:21:55 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:55 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:55 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:21:55 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:21:55 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:21:55 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:55 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:55 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:55 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:55 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/5cd7649c-0588-11e1-b426-12313926dd7c" for 127.0.0.1 at 2011-11-03 17:21:57 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"5cd7649c-0588-11e1-b426-12313926dd7c"}
+  [1m[36mSpot Load (0.2ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1[0m  [["spot_id", "5cd7649c-0588-11e1-b426-12313926dd7c"]]
+Rendered spots/show.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:21:58 +0000
+Served asset /profiles.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:21:58 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:58 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:58 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:21:58 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:21:58 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:58 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:58 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:58 +0000
+Served asset /account_spots.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:21:58 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots" for 127.0.0.1 at 2011-11-03 17:22:00 +0000
+  Processing by SpotsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mSpot Load (0.1ms)[0m  SELECT "spots".* FROM "spots" 
+Rendered spots/index.html.erb within layouts/application (67.7ms)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:22:00 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:22:00 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:22:00 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:22:00 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:22:00 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:22:00 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:22:00 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:22:00 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:22:00 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:22:00 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/5cd7649c-0588-11e1-b426-12313926dd7c" for 127.0.0.1 at 2011-11-03 17:22:05 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"5cd7649c-0588-11e1-b426-12313926dd7c"}
+  [1m[36mSpot Load (0.2ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1[0m  [["spot_id", "5cd7649c-0588-11e1-b426-12313926dd7c"]]
+Rendered spots/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:22:05 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:22:05 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:22:05 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:22:05 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:22:05 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:22:05 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:22:05 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:22:05 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:22:05 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:22:05 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/5cd7649c-0588-11e1-b426-12313926dd7c/inspot" for 127.0.0.1 at 2011-11-03 17:22:34 +0000
+
+ActionController::RoutingError (No route matches [GET] "/en/spots/5cd7649c-0588-11e1-b426-12313926dd7c/inspot"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/en/spots/inspot/5cd7649c-0588-11e1-b426-12313926dd7c/" for 127.0.0.1 at 2011-11-03 17:22:45 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5cd7649c-0588-11e1-b426-12313926dd7c"}
+  [1m[35mAccountSpot Load (0.2ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5cd7649c-0588-11e1-b426-12313926dd7c'
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '' LIMIT 1[0m
+  [1m[35mSpot Load (0.3ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = '5cd90626-0588-11e1-b426-12313926dd7c' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '' LIMIT 1[0m
+Rendered spots/inspot.html.erb within layouts/application (54.2ms)
+Completed 500 Internal Server Error in 98ms
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    10: @account = Account.find_by_account_id (spot.account_id )
+    11: %>
+    12:   <tr>
+    13:     <td><%= @account.email %></td>
+    14:   </tr>
+    15: <% end %>
+    16: </table>
+  app/views/spots/inspot.html.erb:13:in `block in _app_views_spots_inspot_html_erb__1018614566_91604460'
+  app/views/spots/inspot.html.erb:9:in `each'
+  app/views/spots/inspot.html.erb:9:in `_app_views_spots_inspot_html_erb__1018614566_91604460'
+  app/controllers/spots_controller.rb:124:in `inspot'
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.1ms)
+
+
+Started GET "/en/spots/inspot/5cd7649c-0588-11e1-b426-12313926dd7c/" for 127.0.0.1 at 2011-11-03 17:23:01 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5cd7649c-0588-11e1-b426-12313926dd7c"}
+  [1m[35mAccountSpot Load (0.1ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5cd7649c-0588-11e1-b426-12313926dd7c'
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '' LIMIT 1[0m
+  [1m[35mSpot Load (0.2ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = '5cd90626-0588-11e1-b426-12313926dd7c' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '' LIMIT 1[0m
+Rendered spots/inspot.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 54ms
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    10: @account = Account.find_by_account_id (spot.account_id )
+    11: %>
+    12:   <tr>
+    13:     <td><%= @account.email %></td>
+    14:   </tr>
+    15: <% end %>
+    16: </table>
+  app/views/spots/inspot.html.erb:13:in `block in _app_views_spots_inspot_html_erb__1018614566_91604460'
+  app/views/spots/inspot.html.erb:9:in `each'
+  app/views/spots/inspot.html.erb:9:in `_app_views_spots_inspot_html_erb__1018614566_91604460'
+  app/controllers/spots_controller.rb:124:in `inspot'
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.7ms)
+
+
+Started GET "/en/spots/inspot/5cd7649c-0588-11e1-b426-12313926dd7c.json" for 127.0.0.1 at 2011-11-03 17:28:10 +0000
+  Processing by SpotsController#inspot as JSON
+  Parameters: {"locale"=>"en", "id"=>"5cd7649c-0588-11e1-b426-12313926dd7c"}
+  [1m[36mAccountSpot Load (0.3ms)[0m  [1mSELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5cd7649c-0588-11e1-b426-12313926dd7c'[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '' LIMIT 1
+Completed 200 OK in 70ms (Views: 0.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/en/spots/" for 127.0.0.1 at 2011-11-03 17:28:18 +0000
+  Processing by SpotsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mSpot Load (2.5ms)[0m  [1mSELECT "spots".* FROM "spots" [0m
+Rendered spots/index.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 133ms (Views: 129.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:18 +0000
+Served asset /profiles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:18 +0000
+Served asset /account_spots.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:18 +0000
+Served asset /accounts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:18 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:18 +0000
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:18 +0000
+Served asset /spots.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:18 +0000
+Served asset /accounts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:18 +0000
+Served asset /profiles.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:18 +0000
+Served asset /account_spots.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:18 +0000
+Served asset /spots.js - 304 Not Modified (1ms)
+
+
+Started GET "/en/spots/683b3f2c-0531-11e1-b881-123139182f3e" for 127.0.0.1 at 2011-11-03 17:28:20 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"683b3f2c-0531-11e1-b881-123139182f3e"}
+  [1m[35mSpot Load (0.2ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1  [["spot_id", "683b3f2c-0531-11e1-b881-123139182f3e"]]
+Rendered spots/show.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:20 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:20 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:20 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:20 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:20 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:20 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:20 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:20 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:20 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:20 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/774e62fa-0531-11e1-b881-123139182f3e" for 127.0.0.1 at 2011-11-03 17:28:25 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"774e62fa-0531-11e1-b881-123139182f3e"}
+  [1m[36mSpot Load (0.2ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1[0m  [["spot_id", "774e62fa-0531-11e1-b881-123139182f3e"]]
+Rendered spots/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:25 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:25 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:25 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:25 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:25 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:25 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:25 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:25 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:25 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:25 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/11e49586-0588-11e1-b426-12313926dd7c" for 127.0.0.1 at 2011-11-03 17:28:28 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"11e49586-0588-11e1-b426-12313926dd7c"}
+  [1m[35mSpot Load (0.2ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1  [["spot_id", "11e49586-0588-11e1-b426-12313926dd7c"]]
+Rendered spots/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:28 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:28 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:28 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:28 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:28 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:28 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:28 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:28 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:28 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:28 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots" for 127.0.0.1 at 2011-11-03 17:28:33 +0000
+  Processing by SpotsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mSpot Load (0.2ms)[0m  [1mSELECT "spots".* FROM "spots" [0m
+Rendered spots/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:33 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:33 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:33 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:33 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:33 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:33 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:33 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:33 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:33 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:33 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/" for 127.0.0.1 at 2011-11-03 17:28:43 +0000
+  Processing by AccountsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" 
+Rendered accounts/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:43 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:43 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:43 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:43 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:43 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:43 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:43 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:43 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:43 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:43 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/owner/4bf32222-0503-11e1-878b-1231381b101c" for 127.0.0.1 at 2011-11-03 17:28:47 +0000
+  Processing by SpotsController#owner as HTML
+  Parameters: {"locale"=>"en", "id"=>"4bf32222-0503-11e1-878b-1231381b101c"}
+  [1m[36mSpot Load (0.1ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."owner_id" = '4bf32222-0503-11e1-878b-1231381b101c'[0m
+Rendered spots/owner.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:47 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:47 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:47 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:47 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:47 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:47 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:47 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:47 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:47 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:47 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/joined/4bf32222-0503-11e1-878b-1231381b101c" for 127.0.0.1 at 2011-11-03 17:28:49 +0000
+  Processing by SpotsController#joined as HTML
+  Parameters: {"locale"=>"en", "id"=>"4bf32222-0503-11e1-878b-1231381b101c"}
+  [1m[35mAccountSpot Load (0.1ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."account_id" = '4bf32222-0503-11e1-878b-1231381b101c'
+  [1m[36mSpot Load (0.2ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = '774e62fa-0531-11e1-b881-123139182f3e' LIMIT 1[0m
+Rendered spots/joined.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 36ms (Views: 30.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:49 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:49 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:49 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:49 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:49 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:49 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:49 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:49 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:49 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:49 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots" for 127.0.0.1 at 2011-11-03 17:28:56 +0000
+  Processing by SpotsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mSpot Load (0.2ms)[0m  SELECT "spots".* FROM "spots" 
+Rendered spots/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:57 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:57 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:57 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:57 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:57 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:57 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:57 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:57 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:57 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:57 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/774e62fa-0531-11e1-b881-123139182f3e" for 127.0.0.1 at 2011-11-03 17:28:58 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"774e62fa-0531-11e1-b881-123139182f3e"}
+  [1m[36mSpot Load (0.1ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1[0m  [["spot_id", "774e62fa-0531-11e1-b881-123139182f3e"]]
+Rendered spots/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:58 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:58 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:58 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:58 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:58 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:28:58 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:58 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:59 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:59 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:28:59 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/inspots/774e62fa-0531-11e1-b881-123139182f3e" for 127.0.0.1 at 2011-11-03 17:29:06 +0000
+
+ActionController::RoutingError (No route matches [GET] "/en/spots/inspots/774e62fa-0531-11e1-b881-123139182f3e"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/en/spots/inspot/774e62fa-0531-11e1-b881-123139182f3e" for 127.0.0.1 at 2011-11-03 17:29:11 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"774e62fa-0531-11e1-b881-123139182f3e"}
+  [1m[35mAccountSpot Load (0.3ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '774e62fa-0531-11e1-b881-123139182f3e'
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '4bf32222-0503-11e1-878b-1231381b101c' LIMIT 1[0m
+  [1m[35mAccount Load (0.1ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '321679b6-0531-11e1-b881-123139182f3e' LIMIT 1
+  [1m[36mSpot Load (0.2ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = '774f82de-0531-11e1-b881-123139182f3e' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '4bf32222-0503-11e1-878b-1231381b101c' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '321679b6-0531-11e1-b881-123139182f3e' LIMIT 1[0m
+Rendered spots/inspot.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 69ms (Views: 47.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:29:11 +0000
+Served asset /profiles.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:29:11 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:29:11 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:29:11 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:29:11 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:29:11 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:29:11 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:29:11 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:29:11 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:29:11 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/inspot/774e62fa-0531-11e1-b881-123139182f3e.json" for 127.0.0.1 at 2011-11-03 17:29:17 +0000
+  Processing by SpotsController#inspot as JSON
+  Parameters: {"locale"=>"en", "id"=>"774e62fa-0531-11e1-b881-123139182f3e"}
+  [1m[35mAccountSpot Load (0.1ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '774e62fa-0531-11e1-b881-123139182f3e'
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '4bf32222-0503-11e1-878b-1231381b101c' LIMIT 1[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '321679b6-0531-11e1-b881-123139182f3e' LIMIT 1
+Completed 200 OK in 69ms (Views: 41.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/en/spots/" for 127.0.0.1 at 2011-11-03 17:31:24 +0000
+  Processing by SpotsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mSpot Load (0.1ms)[0m  [1mSELECT "spots".* FROM "spots" [0m
+Rendered spots/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:25 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:25 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:25 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:25 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:25 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:25 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:25 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:25 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:25 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:25 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/4e2e8b96-0588-11e1-b426-12313926dd7c" for 127.0.0.1 at 2011-11-03 17:31:27 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"4e2e8b96-0588-11e1-b426-12313926dd7c"}
+  [1m[35mSpot Load (0.2ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1  [["spot_id", "4e2e8b96-0588-11e1-b426-12313926dd7c"]]
+Rendered spots/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 44ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:27 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:27 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:27 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:27 +0000
+Served asset /spots.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:27 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:27 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:27 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:27 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:27 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:27 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/inspot/4e2e8b96-0588-11e1-b426-12313926dd7c.json" for 127.0.0.1 at 2011-11-03 17:31:40 +0000
+  Processing by SpotsController#inspot as JSON
+  Parameters: {"locale"=>"en", "id"=>"4e2e8b96-0588-11e1-b426-12313926dd7c"}
+  [1m[36mAccountSpot Load (0.1ms)[0m  [1mSELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '4e2e8b96-0588-11e1-b426-12313926dd7c'[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '321679b6-0531-11e1-b881-123139182f3e' LIMIT 1
+Completed 200 OK in 63ms (Views: 41.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/en/spots/" for 127.0.0.1 at 2011-11-03 17:31:49 +0000
+  Processing by SpotsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mSpot Load (0.2ms)[0m  [1mSELECT "spots".* FROM "spots" [0m
+Rendered spots/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:49 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:50 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:50 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:50 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:50 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:50 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:50 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:50 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:50 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:50 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/683b3f2c-0531-11e1-b881-123139182f3e" for 127.0.0.1 at 2011-11-03 17:31:51 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"683b3f2c-0531-11e1-b881-123139182f3e"}
+  [1m[35mSpot Load (0.2ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1  [["spot_id", "683b3f2c-0531-11e1-b881-123139182f3e"]]
+Rendered spots/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:52 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:52 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:52 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:52 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:52 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:52 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:52 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:52 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:52 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:52 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/inspot/683b3f2c-0531-11e1-b881-123139182f3e" for 127.0.0.1 at 2011-11-03 17:31:56 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"683b3f2c-0531-11e1-b881-123139182f3e"}
+  [1m[36mAccountSpot Load (0.2ms)[0m  [1mSELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '683b3f2c-0531-11e1-b881-123139182f3e'[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '321679b6-0531-11e1-b881-123139182f3e' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '321679b6-0531-11e1-b881-123139182f3e' LIMIT 1[0m
+  [1m[35mSpot Load (0.2ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = '683ccad6-0531-11e1-b881-123139182f3e' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '321679b6-0531-11e1-b881-123139182f3e' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '321679b6-0531-11e1-b881-123139182f3e' LIMIT 1
+Rendered spots/inspot.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 69ms (Views: 48.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:56 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:56 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:56 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:56 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:56 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:31:56 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:56 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:56 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:56 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:31:56 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/774e62fa-0531-11e1-b881-123139182f3e" for 127.0.0.1 at 2011-11-03 17:32:00 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"774e62fa-0531-11e1-b881-123139182f3e"}
+  [1m[36mSpot Load (0.1ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1[0m  [["spot_id", "774e62fa-0531-11e1-b881-123139182f3e"]]
+Rendered spots/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:00 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:00 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:00 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:00 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:00 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:00 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:00 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:00 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:00 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:00 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/inspot./774e62fa-0531-11e1-b881-123139182f3e" for 127.0.0.1 at 2011-11-03 17:32:05 +0000
+
+ActionController::RoutingError (No route matches [GET] "/en/spots/inspot./774e62fa-0531-11e1-b881-123139182f3e"):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/en/spots/inspot/774e62fa-0531-11e1-b881-123139182f3e" for 127.0.0.1 at 2011-11-03 17:32:08 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"774e62fa-0531-11e1-b881-123139182f3e"}
+  [1m[35mAccountSpot Load (0.1ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '774e62fa-0531-11e1-b881-123139182f3e'
+  [1m[36mAccount Load (0.4ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '4bf32222-0503-11e1-878b-1231381b101c' LIMIT 1[0m
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '321679b6-0531-11e1-b881-123139182f3e' LIMIT 1
+  [1m[36mSpot Load (0.2ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = '774f82de-0531-11e1-b881-123139182f3e' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '4bf32222-0503-11e1-878b-1231381b101c' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '321679b6-0531-11e1-b881-123139182f3e' LIMIT 1[0m
+Rendered spots/inspot.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 45ms (Views: 20.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:08 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:08 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:08 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:08 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:08 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:08 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:08 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:08 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:08 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:08 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots" for 127.0.0.1 at 2011-11-03 17:32:12 +0000
+  Processing by SpotsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mSpot Load (0.3ms)[0m  SELECT "spots".* FROM "spots" 
+Rendered spots/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:13 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:13 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:13 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:13 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:13 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:13 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:13 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:13 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:13 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:13 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/5cd7649c-0588-11e1-b426-12313926dd7c" for 127.0.0.1 at 2011-11-03 17:32:14 +0000
+  Processing by SpotsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"5cd7649c-0588-11e1-b426-12313926dd7c"}
+  [1m[36mSpot Load (0.2ms)[0m  [1mSELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = ? LIMIT 1[0m  [["spot_id", "5cd7649c-0588-11e1-b426-12313926dd7c"]]
+Rendered spots/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:14 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:14 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:14 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:14 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:14 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.css?body=1" for 127.0.0.1 at 2011-11-03 17:32:14 +0000
+Served asset /account_spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:14 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:14 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:14 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-03 17:32:14 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/inspot/5cd7649c-0588-11e1-b426-12313926dd7c" for 127.0.0.1 at 2011-11-03 17:32:20 +0000
+  Processing by SpotsController#inspot as HTML
+  Parameters: {"locale"=>"en", "id"=>"5cd7649c-0588-11e1-b426-12313926dd7c"}
+  [1m[35mAccountSpot Load (0.1ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5cd7649c-0588-11e1-b426-12313926dd7c'
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '' LIMIT 1[0m
+  [1m[35mSpot Load (0.2ms)[0m  SELECT "spots".* FROM "spots" WHERE "spots"."spot_id" = '5cd90626-0588-11e1-b426-12313926dd7c' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '' LIMIT 1[0m
+Rendered spots/inspot.html.erb within layouts/application (57.8ms)
+Completed 500 Internal Server Error in 83ms
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    10: @account = Account.find_by_account_id (spot.account_id )
+    11: %>
+    12:   <tr>
+    13:     <td><%= @account.email %></td>
+    14:   </tr>
+    15: <% end %>
+    16: </table>
+  app/views/spots/inspot.html.erb:13:in `block in _app_views_spots_inspot_html_erb___634806131_85364610'
+  app/views/spots/inspot.html.erb:9:in `each'
+  app/views/spots/inspot.html.erb:9:in `_app_views_spots_inspot_html_erb___634806131_85364610'
+  app/controllers/spots_controller.rb:124:in `inspot'
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.3ms)
+
+
+Started GET "/en/spots/inspot/5cd7649c-0588-11e1-b426-12313926dd7c.json" for 127.0.0.1 at 2011-11-03 17:32:23 +0000
+  Processing by SpotsController#inspot as JSON
+  Parameters: {"locale"=>"en", "id"=>"5cd7649c-0588-11e1-b426-12313926dd7c"}
+  [1m[35mAccountSpot Load (0.1ms)[0m  SELECT "accounts_spots".* FROM "accounts_spots" WHERE "accounts_spots"."spot_id" = '5cd7649c-0588-11e1-b426-12313926dd7c'
+  [1m[36mAccount Load (0.8ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = '' LIMIT 1[0m
+Completed 200 OK in 24ms (Views: 0.8ms | ActiveRecord: 1.3ms)
