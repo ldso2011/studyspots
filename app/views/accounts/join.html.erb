@@ -1,0 +1,19 @@
+<h1>Join</h1>
+
+<%= form_for @account, :validate => true do |f| %>
+  <% if @account.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @account.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p>
+    <label for="spot_id">Local:</label>
+    <%= f.collection_select :spot_id, Spot.find(:all), :spot_id, :local, :prompt => "Select a Local" %>
+  </p>
+  <p class="button"><%= f.submit %></p>
+<% end %>

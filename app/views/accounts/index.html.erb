@@ -12,10 +12,10 @@
 <% @accounts.each do |account| %>
   <tr>
     <td><%= account.username %></td>
-    <td><%= link_to 'Show', account %></td>
-    <td><%= link_to 'Edit', edit_account_path(account) %></td>
-    <td><%= link_to 'Destroy', account, confirm: 'Are you sure?', method: :delete %></td>
-    <td><%= link_to 'Profile', profiles_path+'/'+account.account_id %></td>
+    <td style="width:20px"><%= link_to image_tag('File_info16.png'), account %></td>
+    <td style="width:20px"><%= link_to image_tag('File_edit16.png'), edit_account_path(account) %></td>
+    <td style="width:20px"><%= link_to image_tag('File_delete16.png'), account, confirm: 'Are you sure?', method: :delete %></td>
+    <td style="width:20px"><%= link_to image_tag('User16.png'), profiles_path+'/'+account.account_id %></td>
   </tr>
 <% end %>
 </table>
