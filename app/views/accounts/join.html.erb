@@ -1,4 +1,4 @@
-<h1>Join</h1>
+<h1><%=t :join %></h1>
 
 <%= form_for @account, :validate => true do |f| %>
   <% if @account.errors.any? %>
@@ -12,8 +12,8 @@
     </div>
   <% end %>
   <p>
-    <label for="spot_id">Local:</label>
-    <%= f.collection_select :spot_id, Spot.find(:all), :spot_id, :local, :prompt => "Select a Local" %>
+    <label for="spot_id"><%=t :spot %>:</label>
+    <%= f.collection_select :spot_id, Spot.find(:all), :spot_id, :local, :prompt => t(:selectspot) %>
   </p>
   <p class="button"><%= f.submit %></p>
 <% end %>

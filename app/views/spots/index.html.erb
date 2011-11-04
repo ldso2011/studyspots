@@ -10,10 +10,10 @@
   <% @spots.each do |spot| %>
   <tr>
     <td><%= spot.local %></td>
-    <td style="width:20px"><%= link_to 'Show', spot %></td>
-    <td style="width:20px"><%= link_to 'Edit', edit_spot_path(spot) %></td>
-    <td style="width:20px"><%= link_to 'Destroy', spot, confirm: 'Are you sure?', method: :delete %></td>
-    <td style="width:20px"><%= link_to 'Inspot', spots_path + '/' + spot.spot_id + '/inspot' %></td>
+    <td style="width:20px"><%= link_to image_tag('File_info16.png', :alt => t(:show)), spot %></td>
+    <td style="width:20px"><%= link_to image_tag('File_edit16.png', :alt => t(:edit)), edit_spot_path(spot) %></td>
+    <td style="width:20px"><%= link_to image_tag('File_delete16.png', :alt => t(:delete)), spot, confirm: 'Are you sure?', method: :delete %></td>
+    <td style="width:20px"><%= link_to image_tag('Users16.png', :alt => t(:inspot)), spots_path + '/' + spot.spot_id + '/inspot' %></td>
   </tr>
 <% end %>
 </table>

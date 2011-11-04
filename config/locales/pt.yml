@@ -39,3 +39,6 @@ pt:
   edit: "Editar"
   delete: "Apagar"
   profile: "Perfil"
+  join: "Juntar ao Local"
+  selectspot: "Selecciona um Local"
+  inspot: "No Local"

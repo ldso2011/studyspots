@@ -16,7 +16,7 @@ class Account < ActiveRecord::Base
   validates_confirmation_of :password
   validates_format_of :email, :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, :allow_blank => false, :message => :email_format
   validates_uniqueness_of :username, :email
-  validates_length_of :password, :within => 5..20, :allow_blank => false
+  #validates_length_of :password, :within => 5..20, :allow_blank => false
   
   def self.authenticate(username, password)
     # Pesquisa uma conta pelo email (Ex. ei11001@fe.up.pt) ou pelo username (Ex. ei11001).

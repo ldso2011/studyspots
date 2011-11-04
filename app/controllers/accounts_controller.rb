@@ -104,4 +104,9 @@ class AccountsController < ApplicationController
     end
   end
 
+  # GET /accounts/1/join
+  def join
+    @account = Account.find(params[:id])
+  end
+  
 end

@@ -77,36 +77,6 @@ class SpotsController < ApplicationController
     end
   end
 
-  # GET /spots/owner/1
-  # GET /spots/owner/1.json
-  def owner
-    @spots = Spot.find_all_by_owner_id (params[:id])
-    respond_to do |format|
-      format.html # owner.html.erb
-      format.json { render json: @spots }
-    end
-  end
-  
-  # GET /spots/joined/1
-  # GET /spots/joined/1.json
-  def joined
-    @spots = AccountSpot.find_all_by_account_id (params[:id])
-    respond_to do |format|
-      format.html # joined.html.erb
-      format.json { render json: @spots }
-    end
-  end
-
-  # GET /spots/join
-  # GET /spots/join.json
-  def join
-    @account_spot = AccountSpot.new
-    respond_to do |format|
-      format.html # join.html.erb
-      format.json { render json: @account_spot }
-    end
-  end
-
   # GET /spots/1/inspot
   # GET /spots/1/inspot.json
   def inspot
