@@ -1,5 +1,11 @@
 StudySpots::Application.routes.draw do
   
+  get "pages/home"
+
+  get "pages/contact"
+
+  get "pages/about"
+
   Possible_locales = /en|pt|es/
   
   match "/:locale" => "accounts#index", :locale => Possible_locales
