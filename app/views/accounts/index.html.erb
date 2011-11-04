@@ -7,8 +7,6 @@
     <th></th>
     <th></th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @accounts.each do |account| %>
@@ -18,8 +16,6 @@
     <td><%= link_to 'Edit', edit_account_path(account) %></td>
     <td><%= link_to 'Destroy', account, confirm: 'Are you sure?', method: :delete %></td>
     <td><%= link_to 'Profile', profiles_path+'/'+account.account_id %></td>
-    <td><%= link_to 'Spots Owner', spots_path+'/owner'+'/'+account.account_id %></td>
-    <td><%= link_to 'Spots Joined', spots_path+'/joined'+'/'+account.account_id %></td>
   </tr>
 <% end %>
 </table>

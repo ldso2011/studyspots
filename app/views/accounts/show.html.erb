@@ -8,7 +8,11 @@
   <b>Email:</b>
   <%= @account.email %>
 </p>
-
-
+<p>
+  <b>Actual Spot:</b>
+  <% if @account.spot_id != nil
+    @nome = (Spot.find_by_spot_id (@account.spot_id)).local end %>
+  <%= @nome %>
+</p>
 <%= link_to 'Edit', edit_account_path(@account) %> |
 <%= link_to 'Back', accounts_path %>
