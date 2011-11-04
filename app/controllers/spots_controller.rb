@@ -42,11 +42,6 @@ class SpotsController < ApplicationController
     @spot.spot_id = UUIDTools::UUID.timestamp_create().to_s
     respond_to do |format|
       if @spot.save
-        @account_spot = AccountSpot.new()
-        @account_spot.id = UUIDTools::UUID.timestamp_create().to_s
-        @account_spot.account_id = @spot.owner_id
-        @account_spot.spot_id = @spot.spot_id
-        @account_spot.save
         format.html { redirect_to @spot, notice: t(:spot) + " " + t(:createdsuccess) }
         format.json { render json: @spot, status: :created, location: @spot }
       else
@@ -112,18 +107,13 @@ class SpotsController < ApplicationController
     end
   end
 
-  # GET /spots/inspot/1
-  # GET /spots/inspot/1.json
+  # GET /spots/1/inspot
+  # GET /spots/1/inspot.json
   def inspot
-    @account_spot = AccountSpot.find_all_by_spot_id (params[:id])
-    @accountslist = []
-    @account_spot.each do |spot| 
-      @account = Account.find_by_account_id (spot.account_id )
-      @accountslist << @account
-    end
+    @accounts = Account.find_all_by_spot_id (params[:id])
     respond_to do |format|
       format.html # inspot.html.erb
-      format.json { render json: @accountslist }
+      format.json { render json: @accounts }
     end
   end
 

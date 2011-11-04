@@ -1,20 +1,14 @@
-<h1>People in spots</h1>
-
+<% @spot = Spot.find_by_spot_id (params[:id]) %>
+<h1><%=t :spot %>: <%= @spot.local %></h1>
 <table>
   <tr>
-    <th><% @spotname = (Spot.find_by_spot_id(@account_spot[0])) %></th>
-    <th></th>
+    <th><%=t :username %></th>
+    <th><%=t :email %></th>
   </tr>
-
-<% @account_spot.each do |spot| 
-@account = Account.find_by_account_id (spot.account_id )
-%>
+  <% @accounts.each do |account| %>
   <tr>
-    <td><%= @account.email %></td>
+    <td><%= account.username %></td>
+    <td><%= account.email %></td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Spot', new_spot_path %>
