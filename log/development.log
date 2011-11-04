@@ -84039,3 +84039,88 @@ Served asset /File_delete16.png - 304 Not Modified (0ms)
 
 Started GET "/assets/File_edit16.png" for 127.0.0.1 at 2011-11-04 23:38:20 +0000
 Served asset /File_edit16.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-04 23:55:14 +0000
+  Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" 
+Rendered accounts/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 23:55:14 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 23:55:14 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 23:55:14 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 23:55:14 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 23:55:14 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 23:55:14 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 23:55:14 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 23:55:14 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 23:55:14 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-04 23:56:24 +0000
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 23:56:24 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 23:56:24 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 23:56:24 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 23:56:24 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 23:56:24 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 23:56:24 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 23:56:24 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 23:56:24 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 23:56:24 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
