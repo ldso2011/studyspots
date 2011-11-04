@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111101162051) do
+ActiveRecord::Schema.define(:version => 20111104122309) do
 
   create_table "accounts", :id => false, :force => true do |t|
     t.string   "account_id",      :limit => 36, :null => false
@@ -29,14 +29,7 @@ ActiveRecord::Schema.define(:version => 20111101162051) do
     t.string   "last_ip",         :limit => 15
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "accounts_spots", :id => false, :force => true do |t|
-    t.string   "id",         :limit => 36, :null => false
-    t.string   "account_id", :limit => 36, :null => false
-    t.string   "spot_id",    :limit => 36, :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "spot_id"
   end
 
   create_table "profiles", :id => false, :force => true do |t|

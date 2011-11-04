@@ -1,5 +1,7 @@
 StudySpots::Application.routes.draw do
   
+  root :to=> 'pages#home'
+  
   get "pages/home"
 
   get "pages/contact"
@@ -21,7 +23,6 @@ StudySpots::Application.routes.draw do
     resources :accounts
     resources :profiles
     resources :spots
-    resources :account_spots
   end
   
 #  get "accounts/new"

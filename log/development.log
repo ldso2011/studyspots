@@ -66724,3 +66724,1138 @@ Served asset /File_info16.png - 304 Not Modified (0ms)
 
 Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:14:22 +0000
 Served asset /blueprint/print.css - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (35.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (22.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAccounts (20111026143519)
+  [1m[35m (0.6ms)[0m  CREATE TABLE "accounts" ("account_id" varchar(36) NOT NULL, "username" varchar(50) NOT NULL, "password" varchar(32) NOT NULL, "sex" boolean, "email" varchar(50) NOT NULL, "account_level" integer NOT NULL, "account_state" integer NOT NULL, "birthdate" date, "login_count" integer NOT NULL, "unban_time" datetime, "expiration_time" datetime, "last_login" datetime, "last_ip" varchar(15), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111026143519')[0m
+Migrating to CreateProfiles (20111028131511)
+  [1m[35m (0.7ms)[0m  CREATE TABLE "profiles" ("account_id" varchar(36) NOT NULL, "first_name" varchar(40), "last_name" varchar(40), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111028131511')[0m
+Migrating to CreateSpots (20111101001312)
+  [1m[35m (0.6ms)[0m  CREATE TABLE "spots" ("spot_id" varchar(36) NOT NULL, "owner_id" varchar(36) NOT NULL, "local" varchar(40) NOT NULL, "start_time" datetime NOT NULL, "end_time" datetime NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111101001312')[0m
+Migrating to CreateAccountSpots (20111101162051)
+  [1m[35m (0.9ms)[0m  CREATE TABLE "accounts_spots" ("id" varchar(36) NOT NULL, "account_id" varchar(36) NOT NULL, "spot_id" varchar(36) NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111101162051')[0m
+Migrating to Accounts (20111104122309)
+  [1m[35m (0.8ms)[0m  ALTER TABLE "accounts" ADD "spot_id" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111104122309')[0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("accounts")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("accounts_spots")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("profiles")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("spots")[0m
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (94.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (18.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAccounts (20111026143519)
+  [1m[35m (0.8ms)[0m  CREATE TABLE "accounts" ("account_id" varchar(36) NOT NULL, "username" varchar(50) NOT NULL, "password" varchar(32) NOT NULL, "sex" boolean, "email" varchar(50) NOT NULL, "account_level" integer NOT NULL, "account_state" integer NOT NULL, "birthdate" date, "login_count" integer NOT NULL, "unban_time" datetime, "expiration_time" datetime, "last_login" datetime, "last_ip" varchar(15), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111026143519')[0m
+Migrating to CreateProfiles (20111028131511)
+  [1m[35m (0.7ms)[0m  CREATE TABLE "profiles" ("account_id" varchar(36) NOT NULL, "first_name" varchar(40), "last_name" varchar(40), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111028131511')[0m
+Migrating to CreateSpots (20111101001312)
+  [1m[35m (0.8ms)[0m  CREATE TABLE "spots" ("spot_id" varchar(36) NOT NULL, "owner_id" varchar(36) NOT NULL, "local" varchar(40) NOT NULL, "start_time" datetime NOT NULL, "end_time" datetime NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111101001312')[0m
+Migrating to Accounts (20111104122309)
+  [1m[35m (1.0ms)[0m  ALTER TABLE "accounts" ADD "spot_id" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111104122309')[0m
+  [1m[35m (0.8ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("accounts")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("profiles")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("spots")
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-04 19:38:33 +0000
+
+ActionController::RoutingError (uninitialized constant PlacesController):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-04 19:38:36 +0000
+
+ActionController::RoutingError (uninitialized constant PlacesController):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-04 19:38:58 +0000
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.4ms)
+Compiled application.js  (6ms)  (pid 6268)
+Compiled jquery.js  (1ms)  (pid 6268)
+Compiled jquery_ujs.js  (0ms)  (pid 6268)
+Compiled rails.validations.js  (0ms)  (pid 6268)
+Compiled account_spots.js  (153ms)  (pid 6268)
+Compiled accounts.js  (126ms)  (pid 6268)
+Compiled pages.js  (125ms)  (pid 6268)
+Compiled profiles.js  (128ms)  (pid 6268)
+Compiled spots.js  (126ms)  (pid 6268)
+Compiled blueprint/screen.css  (0ms)  (pid 6268)
+Compiled blueprint/print.css  (0ms)  (pid 6268)
+Compiled blueprint/ie.css  (0ms)  (pid 6268)
+Compiled custom.css  (0ms)  (pid 6268)
+Completed 200 OK in 775ms (Views: 774.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:38:59 +0000
+Served asset /jquery.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:38:59 +0000
+Served asset /accounts.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:38:59 +0000
+Served asset /pages.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:38:59 +0000
+Served asset /account_spots.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:38:59 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:38:59 +0000
+Served asset /profiles.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:38:59 +0000
+Served asset /spots.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:38:59 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:38:59 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:38:59 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/spots" for 127.0.0.1 at 2011-11-04 19:39:03 +0000
+  Processing by SpotsController#index as HTML
+  [1m[36mSpot Load (0.2ms)[0m  [1mSELECT "spots".* FROM "spots" [0m
+Rendered spots/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:04 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:04 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:04 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:04 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:04 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:04 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:04 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:04 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:04 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:04 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-11-04 19:39:09 +0000
+  Processing by AccountsController#index as HTML
+  [1m[35mAccount Load (0.3ms)[0m  SELECT "accounts".* FROM "accounts" 
+Rendered accounts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:09 +0000
+Served asset /account_spots.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:09 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:09 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:09 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:09 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:09 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:09 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:09 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:09 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:09 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/en/accounts/new" for 127.0.0.1 at 2011-11-04 19:39:11 +0000
+  Processing by AccountsController#new as HTML
+  Parameters: {"locale"=>"en"}
+Rendered accounts/new.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:11 +0000
+Served asset /jquery.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:11 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:11 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:11 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:11 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:11 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:11 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:11 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:11 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:11 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/validators/uniqueness?case_sensitive=true&account%5Bemail%5D=ricardo%40ctrler.eu" for 127.0.0.1 at 2011-11-04 19:39:19 +0000
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "accounts" WHERE "accounts"."email" = 'ricardo@ctrler.eu' LIMIT 1[0m
+
+
+Started GET "/validators/uniqueness?case_sensitive=true&account%5Bemail%5D=ricardo%40ctrler.eu" for 127.0.0.1 at 2011-11-04 19:39:19 +0000
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "accounts" WHERE "accounts"."email" = 'ricardo@ctrler.eu' LIMIT 1
+
+
+Started POST "/en/accounts" for 127.0.0.1 at 2011-11-04 19:39:19 +0000
+  Processing by AccountsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oRJlONOKjHLy/j2S7FTUpxuJnb4vH7Dgkfk0D3CRyh4=", "account"=>{"email"=>"ricardo@ctrler.eu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account", "locale"=>"en"}
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "accounts" WHERE "accounts"."username" = 'ricardo' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT 1 FROM "accounts" WHERE "accounts"."email" = 'ricardo@ctrler.eu' LIMIT 1
+Binary data inserted for `string` type on column `last_ip`
+Binary data inserted for `string` type on column `password`
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "accounts" ("account_id", "account_level", "account_state", "birthdate", "created_at", "email", "expiration_time", "last_ip", "last_login", "login_count", "password", "sex", "spot_id", "unban_time", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["account_id", "b09185dc-071c-11e1-a763-080027c736d0"], ["account_level", 1], ["account_state", 0], ["birthdate", nil], ["created_at", Fri, 04 Nov 2011 19:39:20 UTC +00:00], ["email", "ricardo@ctrler.eu"], ["expiration_time", nil], ["last_ip", "127.0.0.1"], ["last_login", nil], ["login_count", 0], ["password", "698dc19d489c4e4db73e28a713eab07b"], ["sex", nil], ["spot_id", nil], ["unban_time", nil], ["updated_at", Fri, 04 Nov 2011 19:39:20 UTC +00:00], ["username", "ricardo"]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "profiles" ("account_id", "created_at", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["account_id", "b09185dc-071c-11e1-a763-080027c736d0"], ["created_at", Fri, 04 Nov 2011 19:39:20 UTC +00:00], ["first_name", ""], ["last_name", ""], ["updated_at", Fri, 04 Nov 2011 19:39:20 UTC +00:00]]
+Redirected to http://localhost:3000/en/accounts/b09185dc-071c-11e1-a763-080027c736d0
+Completed 302 Found in 315ms
+
+
+Started GET "/en/accounts/b09185dc-071c-11e1-a763-080027c736d0" for 127.0.0.1 at 2011-11-04 19:39:20 +0000
+  Processing by AccountsController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"b09185dc-071c-11e1-a763-080027c736d0"}
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = ? LIMIT 1[0m  [["account_id", "b09185dc-071c-11e1-a763-080027c736d0"]]
+Rendered accounts/show.html.erb within layouts/application (66.9ms)
+Completed 200 OK in 85ms (Views: 82.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:20 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:20 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:20 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:20 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:20 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:20 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:20 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:20 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:20 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:20 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/en/accounts" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+  Processing by AccountsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" 
+Rendered accounts/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/File_info16.png" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /File_info16.png - 200 OK (4ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/File_delete16.png" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /File_delete16.png - 200 OK (11ms)
+
+
+Started GET "/assets/File_edit16.png" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /File_edit16.png - 200 OK (5ms)
+
+
+Started GET "/assets/User16.png" for 127.0.0.1 at 2011-11-04 19:39:23 +0000
+Served asset /User16.png - 200 OK (2ms)
+
+
+Started GET "/en/accounts/b09185dc-071c-11e1-a763-080027c736d0/edit" for 127.0.0.1 at 2011-11-04 19:39:31 +0000
+  Processing by AccountsController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"b09185dc-071c-11e1-a763-080027c736d0"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts" WHERE "accounts"."account_id" = ? LIMIT 1[0m  [["account_id", "b09185dc-071c-11e1-a763-080027c736d0"]]
+Rendered accounts/_form.html.erb (25.1ms)
+Rendered accounts/edit.html.erb within layouts/application (64.2ms)
+Completed 200 OK in 76ms (Views: 74.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:31 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:31 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:31 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:31 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:31 +0000
+Served asset /account_spots.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:31 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:31 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:32 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:32 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:32 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/en/profiles/b09185dc-071c-11e1-a763-080027c736d0" for 127.0.0.1 at 2011-11-04 19:39:37 +0000
+  Processing by ProfilesController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"b09185dc-071c-11e1-a763-080027c736d0"}
+  [1m[35mProfile Load (0.3ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."account_id" = ? LIMIT 1  [["account_id", "b09185dc-071c-11e1-a763-080027c736d0"]]
+Rendered profiles/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:37 +0000
+Served asset /jquery.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:37 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:37 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:37 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:37 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:37 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:39:37 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:37 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:37 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:39:37 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/new" for 127.0.0.1 at 2011-11-04 19:40:12 +0000
+  Processing by SpotsController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mProfile Load (0.2ms)[0m  [1mSELECT "profiles".* FROM "profiles" [0m
+Rendered spots/new.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 142ms (Views: 79.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:12 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:12 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:12 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:12 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:12 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:12 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:12 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:12 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:12 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:12 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/spots" for 127.0.0.1 at 2011-11-04 19:40:18 +0000
+  Processing by SpotsController#index as HTML
+  [1m[35mSpot Load (0.1ms)[0m  SELECT "spots".* FROM "spots" 
+Rendered spots/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:18 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:18 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:18 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:18 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:18 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:18 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:18 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:18 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:18 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:18 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2011-11-04 19:40:21 +0000
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:21 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:21 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:21 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:21 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:21 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:21 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:21 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:21 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:21 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:21 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2011-11-04 19:40:22 +0000
+  Processing by PagesController#about as HTML
+Rendered pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:22 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:22 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:22 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:22 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:22 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:22 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:22 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:22 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:22 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:22 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2011-11-04 19:40:23 +0000
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:23 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:23 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:23 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:23 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:23 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:23 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:23 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:23 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:23 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:23 +0000
+Served asset /blueprint/print.css - 304 Not Modified (1ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-11-04 19:40:31 +0000
+  Processing by AccountsController#index as HTML
+  [1m[36mAccount Load (0.2ms)[0m  [1mSELECT "accounts".* FROM "accounts" [0m
+Rendered accounts/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:31 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:31 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:31 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:31 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:31 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:31 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:31 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:31 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:31 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:31 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/en/profiles/b09185dc-071c-11e1-a763-080027c736d0" for 127.0.0.1 at 2011-11-04 19:40:35 +0000
+  Processing by ProfilesController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"b09185dc-071c-11e1-a763-080027c736d0"}
+  [1m[35mProfile Load (0.1ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."account_id" = ? LIMIT 1  [["account_id", "b09185dc-071c-11e1-a763-080027c736d0"]]
+Rendered profiles/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:35 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:35 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:35 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:35 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:35 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:35 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:35 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:35 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:35 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:35 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/en/profiles/b09185dc-071c-11e1-a763-080027c736d0/edit" for 127.0.0.1 at 2011-11-04 19:40:37 +0000
+  Processing by ProfilesController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"b09185dc-071c-11e1-a763-080027c736d0"}
+  [1m[36mProfile Load (0.3ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE "profiles"."account_id" = ? LIMIT 1[0m  [["account_id", "b09185dc-071c-11e1-a763-080027c736d0"]]
+Rendered profiles/_form.html.erb (17.1ms)
+Rendered profiles/edit.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:37 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:37 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:37 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:37 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:37 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:37 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:37 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:37 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:37 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:37 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started PUT "/en/profiles/b09185dc-071c-11e1-a763-080027c736d0" for 127.0.0.1 at 2011-11-04 19:40:42 +0000
+  Processing by ProfilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oRJlONOKjHLy/j2S7FTUpxuJnb4vH7Dgkfk0D3CRyh4=", "profile"=>{"first_name"=>"Ricardo", "last_name"=>"Teixeira"}, "commit"=>"Update Profile", "locale"=>"en", "id"=>"b09185dc-071c-11e1-a763-080027c736d0"}
+  [1m[35mProfile Load (0.3ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."account_id" = ? LIMIT 1  [["account_id", "b09185dc-071c-11e1-a763-080027c736d0"]]
+  [1m[36m (0.3ms)[0m  [1mUPDATE "profiles" SET "first_name" = 'Ricardo', "last_name" = 'Teixeira', "updated_at" = '2011-11-04 19:40:42.818808' WHERE "profiles"."account_id" = 'b09185dc-071c-11e1-a763-080027c736d0'[0m
+Redirected to http://localhost:3000/en/profiles/b09185dc-071c-11e1-a763-080027c736d0
+Completed 302 Found in 78ms
+
+
+Started GET "/en/profiles/b09185dc-071c-11e1-a763-080027c736d0" for 127.0.0.1 at 2011-11-04 19:40:42 +0000
+  Processing by ProfilesController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"b09185dc-071c-11e1-a763-080027c736d0"}
+  [1m[35mProfile Load (0.3ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."account_id" = ? LIMIT 1  [["account_id", "b09185dc-071c-11e1-a763-080027c736d0"]]
+Rendered profiles/show.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 52ms (Views: 46.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:43 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:43 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:43 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:43 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:43 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:43 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:43 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:43 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:43 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:43 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/en/accounts" for 127.0.0.1 at 2011-11-04 19:40:45 +0000
+  Processing by AccountsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mAccount Load (0.3ms)[0m  [1mSELECT "accounts".* FROM "accounts" [0m
+Rendered accounts/index.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 49ms (Views: 46.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:45 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:45 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:45 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:45 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:45 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:45 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:45 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:45 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:45 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:45 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/en/profiles/b09185dc-071c-11e1-a763-080027c736d0" for 127.0.0.1 at 2011-11-04 19:40:47 +0000
+  Processing by ProfilesController#show as HTML
+  Parameters: {"locale"=>"en", "id"=>"b09185dc-071c-11e1-a763-080027c736d0"}
+  [1m[35mProfile Load (0.1ms)[0m  SELECT "profiles".* FROM "profiles" WHERE "profiles"."account_id" = ? LIMIT 1  [["account_id", "b09185dc-071c-11e1-a763-080027c736d0"]]
+Rendered profiles/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:47 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:47 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:47 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:47 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:47 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:47 +0000
+Served asset /accounts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:47 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:47 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:47 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:47 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/en/accounts" for 127.0.0.1 at 2011-11-04 19:40:49 +0000
+  Processing by AccountsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mAccount Load (0.1ms)[0m  [1mSELECT "accounts".* FROM "accounts" [0m
+Rendered accounts/index.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:49 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:49 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:49 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:49 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:49 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:49 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:49 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:49 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:49 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:49 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/en/spots/new" for 127.0.0.1 at 2011-11-04 19:40:54 +0000
+  Processing by SpotsController#new as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mProfile Load (0.1ms)[0m  SELECT "profiles".* FROM "profiles" 
+Rendered spots/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:54 +0000
+Served asset /jquery.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/account_spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:54 +0000
+Served asset /account_spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:54 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:54 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:54 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:54 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-04 19:40:54 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:54 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:54 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-04 19:40:54 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started POST "/en/spots" for 127.0.0.1 at 2011-11-04 19:41:13 +0000
+  Processing by SpotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oRJlONOKjHLy/j2S7FTUpxuJnb4vH7Dgkfk0D3CRyh4=", "spot"=>{"owner_id"=>"b09185dc-071c-11e1-a763-080027c736d0", "local"=>"Biblioteca", "start_time"=>"12:00", "end_time"=>"13:00"}, "commit"=>"Create Spot", "locale"=>"en"}
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "spots" ("created_at", "end_time", "local", "owner_id", "spot_id", "start_time", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 04 Nov 2011 19:41:13 UTC +00:00], ["end_time", Fri, 04 Nov 2011 13:00:00 UTC +00:00], ["local", "Biblioteca"], ["owner_id", "b09185dc-071c-11e1-a763-080027c736d0"], ["spot_id", "f43d56d0-071c-11e1-a763-080027c736d0"], ["start_time", Fri, 04 Nov 2011 12:00:00 UTC +00:00], ["updated_at", Fri, 04 Nov 2011 19:41:13 UTC +00:00]]
+Completed 500 Internal Server Error in 56ms
+
+NameError (uninitialized constant SpotsController::AccountSpot):
+  app/controllers/spots_controller.rb:45:in `block in create'
+  app/controllers/spots_controller.rb:43:in `create'
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
