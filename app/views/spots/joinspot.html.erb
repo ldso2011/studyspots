@@ -1,0 +1,24 @@
+<% @spot = Spot.find_by_spot_id (params[:id]) %>
+<h1><%=t :spot %>: <%= @spot.local %></h1>
+
+<% form_for :spotrails, :url => {:action => 'joinspot', :id => @spot.spot_id }, :html => { :method => :put } do |f| %>
+
+ <%= collection_select(:account, :account_id, Account.all, :account_id, :email, :prompt => true)%>
+
+ <p class="button"><%= f.submit %></p>
+
+<% end %>
+
+
+<table>
+  <tr>
+    <th><%=t :username %></th>
+    <th><%=t :email %></th>
+  </tr>
+  <% @accounts.each do |account| %>
+  <tr>
+    <td><%= account.username %></td>
+    <td><%= account.email %></td>
+  </tr>
+<% end %>
+</table>

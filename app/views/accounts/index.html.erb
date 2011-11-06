@@ -12,10 +12,11 @@
   <tr>
     <td><%= account.username %></td>
     <td><%= account.email %></td>
-    <td style="width:20px"><%= link_to image_tag('File_info16.png', :alt => t(:show)), account %></td>
-    <td style="width:20px"><%= link_to image_tag('File_edit16.png', :alt => t(:edit)), edit_account_path(account) %></td>
-    <td style="width:20px"><%= link_to image_tag('File_delete16.png', :alt => t(:delete)), account, confirm: 'Are you sure?', method: :delete %></td>
-    <td style="width:20px"><%= link_to image_tag('User16.png', :alt => t(:profile)), profiles_path+'/'+account.account_id %></td>
+    <td style="width:20px"><%= link_to image_tag('Info16.png', :title => t(:show)), account %></td>
+    <td style="width:20px"><%= link_to image_tag('Edit16.png', :title => t(:edit)), edit_account_path(account) %></td>
+    <td style="width:20px"><%= link_to image_tag('Delete16.png', :title => t(:delete)), account, confirm: 'Are you sure?', method: :delete %></td>
+    <td style="width:20px"><%= link_to image_tag('User16.png', :title => t(:profile)), profiles_path+'/'+account.account_id %></td>
+    <td style="width:20px"><%= link_to image_tag('Add16.png', :title => '+Spot'), accounts_path+'/'+account.account_id+'/join' %></td>
   </tr>
 <% end %>
 </table>
