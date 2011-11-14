@@ -1,0 +1,36 @@
+en:
+  errors:
+    messages:
+      not_found: "não encontrado"
+      already_confirmed: "já foi confirmado"
+      not_locked: "não está bloqueada"
+
+  devise:
+    failure:
+      unauthenticated: 'Você precisa fazer login ou inscreva-se antes de continuar.'
+      unconfirmed: 'Você tem que confirmar a sua conta antes de continuar.'
+      locked: 'A sua conta está bloqueada.'
+      invalid: 'e-mail ou senha inválida.'
+      invalid_token: 'token de autenticação inválido.'
+      timeout: 'Sua sessão expirou, por favor, entrar novamente para continuar.'
+      inactive: 'A sua conta não foi ativada ainda.'
+    sessions:
+      signed_in: 'Assinado em sucesso.'
+      signed_out: 'Assinado com sucesso.'
+    passwords:
+      send_instructions: 'Você receberá um email com instruções sobre como redefinir sua senha em alguns minutos.'
+      updated: 'Sua senha foi alterada com sucesso. Você está agora assinado dentro.'
+    confirmations:
+      send_instructions: 'Você receberá um email com instruções sobre como confirmar a sua conta em poucos minutos.'
+      confirmed: 'Sua conta foi confirmada com sucesso. Você está agora assinado dentro.'
+    registrations:
+      signed_up: 'Você se inscreveu com sucesso.'
+      updated: 'Você atualizou a sua conta com sucesso.'
+      destroyed: 'Adeus! Sua conta foi cancelada com sucesso. Esperamos vê-lo novamente em breve.'
+    unlocks:
+      send_instructions: 'Você receberá um email com instruções sobre como desbloquear a sua conta em poucos minutos.'
+      unlocked: 'Sua conta foi desbloqueado com sucesso. Você está agora assinado dentro.'
+    mailer:
+      confirmation_instructions: 'Confirmação de instruções'
+      reset_password_instructions: 'Reset instruções senha'
+      unlock_instructions: 'Instruções Unlock'
