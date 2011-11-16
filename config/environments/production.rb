@@ -59,7 +59,7 @@ StudySpots::Application.configure do
   config.active_support.deprecation = :notify
   
   
-  config.action_mailer.default_url_options = { :host => 'quiet-mist-9354.heroku.com' }
+  config.action_mailer.default_url_options = { :host => 'studyspots.heroku.com' }
 
   config.action_mailer.delivery_method = :smtp
   
