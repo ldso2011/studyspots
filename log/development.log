@@ -88424,3 +88424,824 @@ Served asset /blueprint/screen.css - 304 Not Modified (0ms)
 
 Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-06 20:22:16 +0000
 Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-16 16:21:23 +0000
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (44.4ms)
+Compiled application.css  (15ms)  (pid 17986)
+Compiled accounts.css  (95ms)  (pid 17986)
+Compiled blueprint/ie.css  (0ms)  (pid 17986)
+Compiled blueprint/plugins/buttons/screen.css  (0ms)  (pid 17986)
+Compiled blueprint/plugins/fancy-type/screen.css  (0ms)  (pid 17986)
+Compiled blueprint/plugins/link-icons/screen.css  (0ms)  (pid 17986)
+Compiled blueprint/plugins/rtl/screen.css  (0ms)  (pid 17986)
+Compiled blueprint/print.css  (0ms)  (pid 17986)
+Compiled blueprint/screen.css  (0ms)  (pid 17986)
+Compiled blueprint/src/forms.css  (0ms)  (pid 17986)
+Compiled blueprint/src/grid.css  (0ms)  (pid 17986)
+Compiled blueprint/src/ie.css  (0ms)  (pid 17986)
+Compiled blueprint/src/print.css  (0ms)  (pid 17986)
+Compiled blueprint/src/reset.css  (0ms)  (pid 17986)
+Compiled blueprint/src/typography.css  (0ms)  (pid 17986)
+Compiled custom.css  (0ms)  (pid 17986)
+Compiled pages.css  (0ms)  (pid 17986)
+Compiled profiles.css  (1ms)  (pid 17986)
+Compiled spots.css  (0ms)  (pid 17986)
+Compiled application.js  (6ms)  (pid 17986)
+Compiled accounts.js  (240ms)  (pid 17986)
+Compiled pages.js  (135ms)  (pid 17986)
+Compiled profiles.js  (141ms)  (pid 17986)
+Compiled spots.js  (134ms)  (pid 17986)
+Completed 200 OK in 1138ms (Views: 1137.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/blueprint/plugins/link-icons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/plugins/link-icons/screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/plugins/rtl/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/plugins/rtl/screen.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /accounts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/ie.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/ie.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/blueprint/plugins/fancy-type/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/plugins/fancy-type/screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/plugins/buttons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/plugins/buttons/screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/print.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/src/forms.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/src/forms.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/blueprint/src/ie.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/src/ie.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/blueprint/src/grid.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/src/grid.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/src/reset.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/src/reset.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/blueprint/src/print.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/src/print.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /custom.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /pages.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/blueprint/src/typography.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /blueprint/src/typography.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /profiles.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /jquery.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /spots.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /accounts.js - 200 OK (3ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /pages.js - 200 OK (21ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /profiles.js - 200 OK (6ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-16 16:21:24 +0000
+Served asset /spots.js - 200 OK (12ms)
+
+
+Started GET "/users/register" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.5ms)
+Rendered devise/registrations/new.html.erb within layouts/application (67.7ms)
+Completed 200 OK in 216ms (Views: 81.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/ie.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/ie.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/link-icons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/plugins/link-icons/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/fancy-type/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/plugins/fancy-type/screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/plugins/rtl/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/plugins/rtl/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/buttons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/plugins/buttons/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/forms.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/src/forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/ie.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/src/ie.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/print.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/src/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/grid.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/src/grid.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/typography.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/src/typography.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/reset.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /blueprint/src/reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-16 16:21:51 +0000
+Served asset /profiles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-16 16:21:52 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-16 16:21:52 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-16 16:21:52 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-16 16:21:52 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-16 16:21:52 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-16 16:21:52 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-11-16 16:22:43 +0000
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mRIkHZWx5IfgUAjbEWthQIP6e3bF3nEfDhErBC1r0JQ=", "user"=>{"email"=>"ricardo+teste123@ctrler.eu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('ricardo+teste123@ctrler.eu') LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'KDfrhmTQE7gGswN1C3Be' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "users" ("admin", "authentication_token", "confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "failed_attempts", "last_sign_in_at", "last_sign_in_ip", "locked_at", "password_salt", "remember_created_at", "remember_token", "reset_password_token", "sign_in_count", "unlock_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["authentication_token", nil], ["confirmation_sent_at", Wed, 16 Nov 2011 16:22:43 UTC +00:00], ["confirmation_token", "KDfrhmTQE7gGswN1C3Be"], ["confirmed_at", nil], ["created_at", Wed, 16 Nov 2011 16:22:43 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "ricardo+teste123@ctrler.eu"], ["encrypted_password", "ec80a08614fe048491a0f274a6940207bd943d26"], ["failed_attempts", 0], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["locked_at", nil], ["password_salt", "pV93rPjsoYt7PqgYMokf"], ["remember_created_at", nil], ["remember_token", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unlock_token", nil], ["updated_at", Wed, 16 Nov 2011 16:22:43 UTC +00:00]]
+Rendered devise/mailer/confirmation_instructions.html.erb (1.9ms)
+
+Sent mail to ricardo+teste123@ctrler.eu (2433ms)
+Date: Wed, 16 Nov 2011 16:22:45 +0000
+From: ldso2011@gmail.com
+Reply-To: ldso2011@gmail.com
+To: ricardo+teste123@ctrler.eu
+Message-ID: <4ec3e3556b62a_464258ff17e95480@ubuntu-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome ricardo+teste123@ctrler.eu!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=KDfrhmTQE7gGswN1C3Be">Confirm my account</a></p>
+Redirected to http://localhost:3000/
+Completed 302 Found in 4751ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-16 16:22:47 +0000
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/ie.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/ie.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/buttons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/plugins/buttons/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/rtl/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/plugins/rtl/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/link-icons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/plugins/link-icons/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/fancy-type/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/plugins/fancy-type/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/forms.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/src/forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/ie.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/src/ie.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/print.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/src/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/reset.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/src/reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/grid.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/src/grid.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /spots.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /profiles.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/typography.css?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /blueprint/src/typography.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /profiles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/spots.js?body=1" for 127.0.0.1 at 2011-11-16 16:22:48 +0000
+Served asset /spots.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-16 18:09:15 +0000
+
+ActionController::RoutingError (uninitialized constant PagesController):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (35.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-16 18:14:54 +0000
+
+Errno::ENOENT (No such file or directory - /home/ubuntu/Temp/studyspots/config/locales/pt.yml):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.2ms)
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-16 18:15:00 +0000
+
+Errno::ENOENT (No such file or directory - /home/ubuntu/Temp/studyspots/config/locales/pt.yml):
+  
+
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.1ms)
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /home/ubuntu/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.4ms)
+Compiled application.css  (12ms)  (pid 18609)
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/blueprint/plugins/rtl/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/plugins/rtl/screen.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/blueprint/plugins/link-icons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/plugins/link-icons/screen.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/print.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/blueprint/ie.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/ie.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueprint/plugins/buttons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/plugins/buttons/screen.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/blueprint/plugins/fancy-type/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/plugins/fancy-type/screen.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blueprint/src/forms.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/src/forms.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/blueprint/src/grid.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/src/grid.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/src/ie.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/src/ie.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/src/print.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/src/print.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/blueprint/src/typography.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/src/typography.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueprint/src/reset.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /blueprint/src/reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-16 18:15:52 +0000
+Served asset /custom.css - 304 Not Modified (2ms)
+
+
+Started GET "/users/register" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.3ms)
+Rendered devise/registrations/new.html.erb within layouts/application (190.4ms)
+Completed 200 OK in 338ms (Views: 207.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/blueprint/plugins/rtl/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/plugins/rtl/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/ie.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/ie.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/buttons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/plugins/buttons/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/fancy-type/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/plugins/fancy-type/screen.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueprint/plugins/link-icons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/plugins/link-icons/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/grid.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/src/grid.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/reset.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/src/reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/print.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/src/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/ie.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/src/ie.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/forms.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/src/forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/typography.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /blueprint/src/typography.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:35 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-11-16 18:19:51 +0000
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mRIkHZWx5IfgUAjbEWthQIP6e3bF3nEfDhErBC1r0JQ=", "user"=>{"email"=>"ricardo+teste3@ctrler.eu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('ricardo+teste3@ctrler.eu') LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'r8gvgC6SrPpi4ppQMxC9' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (7.9ms)[0m  [1mINSERT INTO "users" ("admin", "authentication_token", "confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "failed_attempts", "last_sign_in_at", "last_sign_in_ip", "locked_at", "password_salt", "remember_created_at", "remember_token", "reset_password_token", "sign_in_count", "unlock_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["authentication_token", nil], ["confirmation_sent_at", Wed, 16 Nov 2011 18:19:51 UTC +00:00], ["confirmation_token", "r8gvgC6SrPpi4ppQMxC9"], ["confirmed_at", nil], ["created_at", Wed, 16 Nov 2011 18:19:51 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "ricardo+teste3@ctrler.eu"], ["encrypted_password", "b6a6ee4a351703f037e17423b35135d4479dc25a"], ["failed_attempts", 0], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["locked_at", nil], ["password_salt", "6VqMsRBPvpJUQkdprCsU"], ["remember_created_at", nil], ["remember_token", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unlock_token", nil], ["updated_at", Wed, 16 Nov 2011 18:19:51 UTC +00:00]]
+Rendered devise/mailer/confirmation_instructions.html.erb (1.1ms)
+
+Sent mail to ricardo+teste3@ctrler.eu (2491ms)
+Date: Wed, 16 Nov 2011 18:19:53 +0000
+From: ldso2011@gmail.com
+Reply-To: ldso2011@gmail.com
+To: ricardo+teste3@ctrler.eu
+Message-ID: <4ec3fec968dff_48b154cc066826e3@ubuntu-VirtualBox.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome ricardo+teste3@ctrler.eu!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=r8gvgC6SrPpi4ppQMxC9">Confirm my account</a></p>
+Redirected to http://localhost:3000/
+Completed 302 Found in 4906ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/blueprint/ie.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/ie.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/buttons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/plugins/buttons/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/fancy-type/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/plugins/fancy-type/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/link-icons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/plugins/link-icons/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/plugins/rtl/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/plugins/rtl/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/grid.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/src/grid.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/ie.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/src/ie.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/forms.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/src/forms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/reset.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/src/reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/print.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/src/print.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueprint/src/typography.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /blueprint/src/typography.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-16 18:19:56 +0000
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=r8gvgC6SrPpi4ppQMxC9" for 127.0.0.1 at 2011-11-16 18:21:05 +0000
+  Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"r8gvgC6SrPpi4ppQMxC9"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'r8gvgC6SrPpi4ppQMxC9' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2011-11-16 18:21:05.616301', "updated_at" = '2011-11-16 18:21:05.616637' WHERE "users"."id" = 5[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2011-11-16 18:21:05.659728', "current_sign_in_at" = '2011-11-16 18:21:05.659728', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2011-11-16 18:21:05.660261' WHERE "users"."id" = 5
+Redirected to http://localhost:3000/
+Completed 302 Found in 138ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-16 18:21:05 +0000
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 LIMIT 1[0m
+Completed 200 OK in 88ms (Views: 86.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/blueprint/ie.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/ie.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/plugins/buttons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/plugins/buttons/screen.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/plugins/fancy-type/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/plugins/fancy-type/screen.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/plugins/link-icons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/plugins/link-icons/screen.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/plugins/rtl/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/plugins/rtl/screen.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/print.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/screen.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/src/forms.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/src/forms.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/src/grid.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/src/grid.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/src/ie.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/src/ie.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/src/reset.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/src/reset.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/src/print.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/src/print.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/src/typography.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /blueprint/src/typography.css - 200 OK (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /custom.css - 200 OK (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2011-11-16 18:21:06 +0000
+Served asset /pages.css - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-16 18:21:14 +0000
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 LIMIT 1
+Completed 200 OK in 105ms (Views: 104.1ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (78.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (18.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20111111233253)
+  [1m[35m (0.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "remember_token" varchar(255), "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "password_salt" varchar(255), "confirmation_token" varchar(255), "confirmed_at" datetime, "confirmation_sent_at" datetime, "failed_attempts" integer DEFAULT 0, "unlock_token" varchar(255), "locked_at" datetime, "authentication_token" varchar(255), "created_at" datetime, "updated_at" datetime, "admin" boolean) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_confirmation_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_unlock_token" ON "users" ("unlock_token")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_unlock_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_confirmation_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_authentication_token" ON "users" ("authentication_token")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20111111233253')[0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.3ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_authentication_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_unlock_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_confirmation_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-16 18:40:02 +0000
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (38.3ms)
+Compiled application.css  (13ms)  (pid 19311)
+Compiled blueprint/ie.css  (0ms)  (pid 19311)
+Compiled blueprint/plugins/buttons/screen.css  (0ms)  (pid 19311)
+Compiled blueprint/plugins/fancy-type/screen.css  (0ms)  (pid 19311)
+Compiled blueprint/plugins/link-icons/screen.css  (0ms)  (pid 19311)
+Compiled blueprint/plugins/rtl/screen.css  (0ms)  (pid 19311)
+Compiled blueprint/print.css  (0ms)  (pid 19311)
+Compiled blueprint/screen.css  (0ms)  (pid 19311)
+Compiled blueprint/src/forms.css  (0ms)  (pid 19311)
+Compiled blueprint/src/grid.css  (0ms)  (pid 19311)
+Compiled blueprint/src/ie.css  (0ms)  (pid 19311)
+Compiled blueprint/src/print.css  (0ms)  (pid 19311)
+Compiled blueprint/src/reset.css  (0ms)  (pid 19311)
+Compiled blueprint/src/typography.css  (0ms)  (pid 19311)
+Compiled custom.css  (0ms)  (pid 19311)
+Compiled pages.css  (70ms)  (pid 19311)
+Completed 200 OK in 279ms (Views: 278.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/blueprint/ie.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/ie.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/blueprint/plugins/link-icons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/plugins/link-icons/screen.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/print.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/blueprint/plugins/fancy-type/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/plugins/fancy-type/screen.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueprint/plugins/rtl/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/plugins/rtl/screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/plugins/buttons/screen.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/plugins/buttons/screen.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/src/forms.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/src/forms.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/src/ie.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/src/ie.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueprint/src/print.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/src/print.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/src/grid.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/src/grid.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueprint/src/typography.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/src/typography.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blueprint/src/reset.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /blueprint/src/reset.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2011-11-16 18:40:03 +0000
+Served asset /custom.css - 304 Not Modified (2ms)
