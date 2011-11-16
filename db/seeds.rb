@@ -1,2 +1,7 @@
-Account.new(email: 'ei11001@fe.up.pt', password: '12345')
-Account.new(email: 'ei11002@fe.up.pt', password: '12345')
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+#
+# Examples:
+#
+#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create(name: 'Emanuel', city: cities.first)

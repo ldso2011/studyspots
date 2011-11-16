@@ -2,38 +2,19 @@
 <html>
 <head>
   <title>StudySpots</title>
+  <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag "rails.validations" %>
-
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->    
-    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-    <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
-    <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-    <%= stylesheet_link_tag 'custom', :media => 'screen' %>
-    
   <%= csrf_meta_tags %>
 </head>
 <body>
-	
- <div class="container">
-      <header>
-        <%= image_tag("logo.png", :alt => "StudySpots", :class => "round") %>
-        <nav class="round">
-          <ul>
-            <li><%= link_to "Home", '/pages/home' %></li>
-            <li><%= link_to "About", '/pages/about' %></li>
-            <li><%= link_to "Spots", '/spots' %></li>
-             <li><%= link_to "Students", '/accounts' %></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="round">
-        <%= yield %>
-      </section>
-    </div>
-
-
+  <div id="user_nav">
+    <% if user_signed_in? %>
+      Signed in as <%= current_user.email %>. Not you?
+      <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+    <% else %>
+      <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+    <% end %>
+  </div>
+  <%= yield %>
 </body>
 </html>

@@ -5,7 +5,9 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def about
+  def privacy
   end
 
+  def about
+  end
 end
