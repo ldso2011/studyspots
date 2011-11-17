@@ -2,19 +2,36 @@
 <html>
 <head>
   <title>StudySpots</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
+<%= csrf_meta_tag %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->    
+    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+    <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+    <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+    <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+  </head>
 <body>
-  <div id="user_nav">
-    <% if user_signed_in? %>
-      Signed in as <%= current_user.email %>. Not you?
-      <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-    <% else %>
-      <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
-    <% end %>
-  </div>
+	
+	<div class="container">
+      <header>
+        <%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+        <nav class="round">
+          <ul>
+						
+            <li><%= link_to "Home", '/' %></li>
+            <% if user_signed_in? %>
+            <li><%= current_user.email %> <%= link_to "(Log out)", destroy_user_session_path, :method => :get %></li>
+            
+            <% else %>
+            <li><%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Log in", new_user_session_path %></li>
+            <% end %>
+          </ul>
+        </nav>
+      </header>
+      <section class="round">
   <%= yield %>
+        </section>
+    </div>
 </body>
 </html>
