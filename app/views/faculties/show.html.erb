@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<div class="field">
+  <table>
+    <tr>
+      <th><%= t(:parameters) %></th>
+      <th><%= t(:description) %></th>
+    </tr>
+    <tr>
+      <td><%= t(:name) %></td>
+      <td><%= @faculty.name %></td>
+    </tr>
+    <tr>
+      <td><%= t(:acronym) %></td>
+      <td><%= @faculty.acronym %></td>
+    </tr>
+    <tr>
+      <td><%= t(:type) %></td>
+      <td><% if (@faculty.faculty_type == false) %><%= t(:faculty_type_public) %><% else %><%= t(:faculty_type_private) %><% end %></td>
+    </tr>
+    <tr>
+      <td><%= t(:url) %></td>
+      <td><a href='<%= @faculty.url %>'><%= @faculty.url %></a></td>
+    </tr>
+  </table>
+</div>
+
+<%= link_to t(:edit), edit_faculty_path(@faculty) %> |
+<%= link_to t(:back), faculties_path %>

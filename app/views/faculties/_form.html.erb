@@ -1,0 +1,34 @@
+<%= form_for(@faculty) do |f| %>
+  <% if @faculty.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@faculty.errors.count, "error") %><%= t(:faculty_prohibited_saved) %></h2>
+
+      <ul>
+      <% @faculty.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label t(:name) %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label t(:acronym) %><br />
+    <%= f.text_field :acronym %>
+  </div>
+  <div class="field">
+    <%= f.label t(:type) %><br />
+    <%= f.radio_button(:faculty_type, false) %><%= t(:faculty_type_public) %>
+    <%= f.radio_button(:faculty_type, true) %><%= t(:faculty_type_private) %><br />
+  </div>
+  <div class="field">
+    <%= f.label t(:url) %><br />
+    <%= f.text_field :url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
