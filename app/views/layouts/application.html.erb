@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>StudySpots</title>
-<%= csrf_meta_tag %>
+    <%= csrf_meta_tag %>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->    
@@ -10,6 +10,7 @@
     <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
     <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
     <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+    <%= javascript_include_tag 'application' %>
   </head>
 <body>
 	
@@ -26,6 +27,10 @@
             <% else %>
             <li><%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Log in", new_user_session_path %></li>
             <% end %>
+            <li>
+              <%= link_to(image_tag('flags/Portugal-Flag-16.png', :size => "16x16", :class => "flagsimg", :alt => t(:show)), :locale => "pt") %>
+              <%= link_to(image_tag('flags/United-States-Flag-16.png', :size => "16x16", :class => "flagsimg", :alt => t(:show)), :locale => "en") %>
+            </li>
           </ul>
         </nav>
       </header>

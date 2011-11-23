@@ -1,4 +1,11 @@
 StudySpots::Application.routes.draw do
+  Possible_locales = /en|pt/
+  scope :path => "(:locale)", :shallow_path => "(:locale)", :locale => Possible_locales do
+    resources :faculties
+    resources :courses
+    resources :disciplines
+  end
+  
   devise_for :users, :path_names => { 
     :sign_up => "register",
     :sign_in => "login",
@@ -7,7 +14,9 @@ StudySpots::Application.routes.draw do
 
   match '/privacy' => "pages#privacy" 
 
-  root :to => "pages#home"
+  match '(:locale)' => "pages#home"
+  
+  root :to => "pages#home", :locale => Possible_locales
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

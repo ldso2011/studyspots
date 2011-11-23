@@ -11,7 +11,36 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111111233253) do
+ActiveRecord::Schema.define(:version => 20111119012159) do
+
+  create_table "courses", :id => false, :force => true do |t|
+    t.string   "course_id",  :limit => 36,  :null => false
+    t.string   "name",       :limit => 100, :null => false
+    t.string   "acronym",    :limit => 10,  :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "disciplines", :id => false, :force => true do |t|
+    t.string   "discipline_id", :limit => 36,  :null => false
+    t.string   "code",          :limit => 7,   :null => false
+    t.string   "name",          :limit => 100, :null => false
+    t.string   "acronym",       :limit => 10,  :null => false
+    t.string   "course_id",     :limit => 36,  :null => false
+    t.date     "year",                         :null => false
+    t.integer  "semester",                     :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "faculties", :id => false, :force => true do |t|
+    t.string   "faculty_id", :limit => 36,  :null => false
+    t.string   "name",       :limit => 100, :null => false
+    t.string   "acronym",    :limit => 10,  :null => false
+    t.boolean  "type",                      :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false

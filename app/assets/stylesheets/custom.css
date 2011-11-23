@@ -11,7 +11,8 @@ header {
 }
 
 header img {
-  padding: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   background: #fff;
 }
 
@@ -99,3 +100,23 @@ a.signup_button {
   -webkit-border-radius: 10px;
   border-radius:         10px;
 }
+
+.flagsimg {
+  padding: 0px;
+}
+
+/* Paginação */
+.pretty th .current {
+  padding-right: 12px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.pretty th .asc {
+  background-image: url(/assets/up_arrow.gif);
+}
+
+.pretty th .desc {
+  background-image: url(/assets/down_arrow.gif);
+}
+/* Paginação */

@@ -8,3 +8,13 @@
 //= require jquery_ujs
 //= require_tree .
 
+$(function() {
+  $("#faculties th a, #faculties .pagination a").live("click", function() {
+    $.getScript(this.href);
+    return false;
+  });
+  $("#faculties_search input").keyup(function() {
+    $.get($("#faculties_search").attr("action"), $("#faculties_search").serialize(), null, "script");
+    return false;
+  });
+});
