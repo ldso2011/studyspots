@@ -5,7 +5,7 @@ class CreateFaculties < ActiveRecord::Migration
       t.string :name, :limit => 100,  :null => false
       t.string :acronym, :limit => 10, :null => false
       t.boolean :faculty_type, :null => false
-      t.string :url, limit => 100, :null => false
+      t.string :url, :limit => 100, :null => false
       t.timestamps
     end
   end
