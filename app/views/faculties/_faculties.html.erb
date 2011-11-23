@@ -1,0 +1,23 @@
+<%= hidden_field_tag :direction, params[:direction] %>
+<%= hidden_field_tag :sort, params[:sort] %>
+<table class="pretty">
+  <tr>
+    <th><%= sortable "acronym", t(:acronym) %></th>
+    <th><%= sortable "name", t(:name) %></th>
+    <th><%= sortable "faculty_type", t(:type) %></th>
+    <th colspan="3"><%= t(:options) %></th>
+  </tr>
+
+<% @faculties.each do |faculty| %>
+  <tr>
+    <td><%= faculty.acronym %></td>
+    <td><%= faculty.name %></td>
+    <td><% if (faculty.faculty_type == false) %><%= t(:faculty_type_public) %><% else %><%= t(:faculty_type_private) %><% end %></td>
+    <td style="width:16px"><%= link_to image_tag('File_info16.png', :alt => t(:show)), faculty %></td>
+    <td style="width:16px"><%= link_to image_tag('File_edit16.png', :alt => t(:edit)), edit_faculty_path(faculty) %></td>
+    <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:destroy)), faculty, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @faculties %>
+<br />
