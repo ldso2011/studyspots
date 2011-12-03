@@ -9,7 +9,11 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
   # Define a linguagem do site.
   def set_locale
-    I18n.locale = params[:locale] || I18n.default_locale || I18n.locale = extract_locale_from_accept_language_header
+    if(user_signed_in?)
+      I18n.locale = Profile.find_by_user_id(current_user.id).language
+    else
+      I18n.locale = params[:locale] || I18n.default_locale || I18n.locale = extract_locale_from_accept_language_header
+    end
   end
   # Extrai a linguagem do browser utilizado.
   private

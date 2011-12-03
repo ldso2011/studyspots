@@ -11,6 +11,7 @@
     <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
     <%= stylesheet_link_tag 'custom', :media => 'screen' %>
     <%= javascript_include_tag 'application' %>
+    <%= yield :head %>
   </head>
 <body>
 	
@@ -26,11 +27,11 @@
             
             <% else %>
             <li><%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Log in", new_user_session_path %></li>
-            <% end %>
+            
             <li>
               <%= link_to(image_tag('flags/Portugal-Flag-16.png', :size => "16x16", :class => "flagsimg", :alt => t(:show)), :locale => "pt") %>
               <%= link_to(image_tag('flags/United-States-Flag-16.png', :size => "16x16", :class => "flagsimg", :alt => t(:show)), :locale => "en") %>
-            </li>
+            </li><% end %>
           </ul>
         </nav>
       </header>
@@ -38,5 +39,6 @@
   <%= yield %>
         </section>
     </div>
+   <%= yield :scripts %>
 </body>
 </html>

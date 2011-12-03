@@ -1,0 +1,41 @@
+<%= form_for(@profile) do |f| %>
+  <% if @profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@profile.errors.count, "error") %> <%= t(:discipline_prohibited_saved) %></h2>
+
+      <ul>
+      <% @profile.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label t(:first_name) %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label t(:last_name) %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label t(:faculty) %><br />
+    <%= collection_select(:faculty, :faculty_id, Faculty.find(:all), :faculty_id, :name, :prompt => t(:faculty_select)) %>
+  </div>
+  <div class="field">
+    <%= f.label t(:course) %><br />
+    <%= f.collection_select :course_id, Course.find(:all), :course_id, :name, :prompt => t(:course_select) %>
+  </div>
+  <div class="field">
+    <%= f.label t(:year) %><br />
+    <%= f.text_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label t(:language) %><br />
+    <%= f.text_field :language %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

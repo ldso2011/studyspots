@@ -1,20 +1,25 @@
 StudySpots::Application.routes.draw do
   Possible_locales = /en|pt/
-  scope :path => "(:locale)", :shallow_path => "(:locale)", :locale => Possible_locales do
-    resources :faculties
-    resources :courses
-    resources :disciplines
+  namespace "users" , :path => "(:locale)/users", :locale => Possible_locales do
+    resources :disciplines, :controller => "disciplines"
+    resources :profile, :controller => "profile"
+  end
+
+  scope :path => "(:locale)/administration", :locale => Possible_locales do
+    resources :faculties, :controller => "administration/faculties"
+    resources :courses, :controller => "administration/courses"
+    resources :disciplines, :controller => "administration/disciplines"
   end
   
-  devise_for :users, :path_names => { 
+  devise_for :users, :path => "(:locale)", :locale => Possible_locales, :path_names => { 
     :sign_up => "register",
     :sign_in => "login",
     :sign_out => "logout"
   }
 
-  match '/privacy' => "pages#privacy" 
+  match '(:locale)/privacy' => "pages#privacy" 
 
-  match '(:locale)' => "pages#home"
+  match ':locale/' => "pages#home"
   
   root :to => "pages#home", :locale => Possible_locales
 

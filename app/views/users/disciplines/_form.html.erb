@@ -1,0 +1,41 @@
+<%= form_for(@users_disciplines) do |f| %>
+  <% if @users_disciplines.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@users_disciplines.errors.count, "error") %> <%= t(:discipline_prohibited_saved) %></h2>
+
+      <ul>
+      <% @users_disciplines.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label t(:faculty) %><br />
+    <%= collection_select(:faculty, :faculty_id, Faculty.find(:all), :faculty_id, :name, :prompt => t(:faculty_select)) %>
+  </div>
+  <div class="field">
+    <%= f.label t(:course) %><br />
+    <%= f.collection_select :course_id, Course.find(:all), :course_id, :name, :prompt => t(:course_select) %>
+  </div>
+  <div class="field">
+    <%= f.label t(:discipline_code) %><br />
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label t(:name) %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label t(:acronym) %><br />
+    <%= f.text_field :acronym %>
+  </div>
+  <div class="field">
+    <%= f.label t(:discipline_semester) %><br />
+    <%= f.text_field :semester %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

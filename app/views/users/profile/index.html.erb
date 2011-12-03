@@ -1,0 +1,41 @@
+<h1><%= t(:profile) %></h1>
+
+<table class="pretty">
+  <tr>
+    <th><%= t(:parameters) %></th>
+    <th><%= t(:discrition) %></th>
+  </tr>
+
+  <tr>
+    <td><%= t(:name) %></td>
+    <td><%= @profile.first_name %> <%= @profile.last_name %></td>
+  </tr>
+  <tr>
+    <td><%= t(:email) %></td>
+    <td><%= current_user.email %></td>
+  </tr>
+  <tr>
+    <td><%= t(:faculty) %></td>
+    <td><%= @profile.faculty.acronym %> - <%= @profile.faculty.name %></td>
+  </tr>
+  <tr>
+    <td><%= t(:course) %></td>
+    <td><%= @profile.course.acronym %> - <%= @profile.course.name %></td>
+  </tr>
+  <tr>
+    <td><%= t(:year) %></td>
+    <td><%= @profile.year %></td>
+  </tr>
+  <tr>
+    <td><%= t(:language) %></td>
+    <td><%= @profile.language %></td>
+  </tr>
+  <tr>
+    <td><%= t(:localization) %></td>
+    <td><img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @profile.latitude %>,<%= @profile.longitude %>&zoom=16&size=400x400&markers=color:red%7Ccolor:blue%7C<%= @profile.latitude %>,<%= @profile.longitude %>&sensor=true"></td>
+  </tr>
+</table>
+
+<br />
+
+<%= link_to t(:profile), users_profile_index_path %>

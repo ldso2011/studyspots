@@ -3,8 +3,9 @@ class Course < ActiveRecord::Base
   set_table_name "courses"
   # Usa-se quando a chave primária não se chama 'id'.
   set_primary_key :course_id
-  
+  # Relações entre 'Models'.
   belongs_to :faculty
+  has_many :discipline
 
   def self.search(search)
     if search

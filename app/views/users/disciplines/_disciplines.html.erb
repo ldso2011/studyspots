@@ -1,0 +1,19 @@
+<%= hidden_field_tag :direction, params[:direction] %>
+<%= hidden_field_tag :sort, params[:sort] %>
+<table class="pretty">
+  <tr>
+    <th><%= t(:acronym) %></th>
+    <th><%= t(:discipline) %></th>
+    <th><%= t(:options) %></th>
+  </tr>
+
+<% @users_disciplines.each do |userdiscipline| %>
+  <tr>
+    <td><%= userdiscipline.discipline.acronym %></td>
+    <td><%= userdiscipline.discipline.name %></td>
+    <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:destroy)), userdiscipline, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @users_disciplines %>
+<br />

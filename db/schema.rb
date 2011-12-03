@@ -11,12 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111119012159) do
+ActiveRecord::Schema.define(:version => 20111201212550) do
 
   create_table "courses", :id => false, :force => true do |t|
     t.string   "course_id",  :limit => 36,  :null => false
+    t.string   "faculty_id", :limit => 36,  :null => false
     t.string   "name",       :limit => 100, :null => false
     t.string   "acronym",    :limit => 10,  :null => false
+    t.integer  "degree",                    :null => false
+    t.string   "begin",      :limit => 9,   :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -27,17 +30,29 @@ ActiveRecord::Schema.define(:version => 20111119012159) do
     t.string   "name",          :limit => 100, :null => false
     t.string   "acronym",       :limit => 10,  :null => false
     t.string   "course_id",     :limit => 36,  :null => false
-    t.date     "year",                         :null => false
     t.integer  "semester",                     :null => false
+    t.integer  "year"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "faculties", :id => false, :force => true do |t|
-    t.string   "faculty_id", :limit => 36,  :null => false
-    t.string   "name",       :limit => 100, :null => false
-    t.string   "acronym",    :limit => 10,  :null => false
-    t.boolean  "type",                      :null => false
+    t.string   "faculty_id",   :limit => 36,  :null => false
+    t.string   "name",         :limit => 100, :null => false
+    t.string   "acronym",      :limit => 10,  :null => false
+    t.boolean  "faculty_type",                :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "url",          :limit => 100, :null => false
+  end
+
+  create_table "profiles", :id => false, :force => true do |t|
+    t.string   "profile_id", :limit => 36, :null => false
+    t.integer  "user_id",                  :null => false
+    t.string   "faculty_id", :limit => 36, :null => false
+    t.string   "course_id",  :limit => 36, :null => false
+    t.integer  "year",                     :null => false
+    t.string   "language",   :limit => 2,  :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -71,5 +86,13 @@ ActiveRecord::Schema.define(:version => 20111119012159) do
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
   add_index "users", ["unlock_token"], :name => "index_users_on_unlock_token", :unique => true
+
+  create_table "users_disciplines", :id => false, :force => true do |t|
+    t.string   "users_disciplines_id", :limit => 36, :null => false
+    t.string   "discipline_id",        :limit => 36, :null => false
+    t.integer  "user_id",              :limit => 7,  :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

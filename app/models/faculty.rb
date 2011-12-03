@@ -3,6 +3,8 @@ class Faculty < ActiveRecord::Base
   set_table_name "faculties"
   # Usa-se quando a chave primária não se chama 'id'.
   set_primary_key :faculty_id
+  # Relações entre 'Models'.
+  has_many :course
   
   def self.search(search)
     if search
