@@ -124,11 +124,19 @@ MIEIC = Course.create!(
 
 # Disciplnes
 Discipline.delete_all
-LDSO = Course.create!(
+LDSO = Discipline.create!(
   :discipline_id => UUIDTools::UUID.timestamp_create().to_s,
   :code => 'EIC0086',
   :name => 'Laboratório de Desenvolvimento de Software',
   :acronym => 'LDSO',
+  :course_id => MIEIC.course_id,
+  :semester => 1,
+  :year => 4)
+MFES = Discipline.create!(
+  :discipline_id => UUIDTools::UUID.timestamp_create().to_s,
+  :code => 'EIC0039',
+  :name => 'Métodos Formais em Engenharia de Software',
+  :acronym => 'MFES',
   :course_id => MIEIC.course_id,
   :semester => 1,
   :year => 4)
