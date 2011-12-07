@@ -18,7 +18,7 @@ StudySpots::Application.routes.draw do
   }
 
   match '(:locale)/privacy' => "pages#privacy" 
-
+  match '(:locale)/users/profile/new' => "users/profile#create" 
   match ':locale/' => "pages#home"
   
   root :to => "pages#home", :locale => Possible_locales

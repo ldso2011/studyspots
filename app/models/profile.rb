@@ -7,4 +7,6 @@ class Profile < ActiveRecord::Base
   belongs_to :user
   belongs_to :faculty
   belongs_to :course
+  
+  attr_accessible :first_name, :last_name, :course_id, :faculty_id, :language, :year
 end

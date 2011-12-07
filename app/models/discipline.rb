@@ -8,6 +8,8 @@ class Discipline < ActiveRecord::Base
   has_many :users
   has_many :users, :through => :usersdisciplines
 
+  attr_accessible :discipline_id, :code, :name, :acronym, :course_id, :semester, :year
+  
   def self.search(search)
     if search
       where('name LIKE ?', "%#{search}%")

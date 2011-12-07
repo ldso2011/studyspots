@@ -6,6 +6,8 @@ class Course < ActiveRecord::Base
   # Relações entre 'Models'.
   belongs_to :faculty
   has_many :discipline
+  
+  attr_accessible :course_id, :faculty_id, :name ,:acronym, :degree, :begin
 
   def self.search(search)
     if search

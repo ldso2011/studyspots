@@ -6,6 +6,8 @@ class Faculty < ActiveRecord::Base
   # Relações entre 'Models'.
   has_many :course
   
+  attr_accessible :faculty_id, :name, :acronym, :faculty_type, :url
+  
   def self.search(search)
     if search
       where('name LIKE ?', "%#{search}%")

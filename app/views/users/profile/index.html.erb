@@ -3,7 +3,7 @@
 <table class="pretty">
   <tr>
     <th><%= t(:parameters) %></th>
-    <th><%= t(:discrition) %></th>
+    <th><%= t(:description) %></th>
   </tr>
 
   <tr>
@@ -28,11 +28,11 @@
   </tr>
   <tr>
     <td><%= t(:language) %></td>
-    <td><%= @profile.language %></td>
+    <td><%= image_tag('flags/' + @profile.language + '.png', :size => "16x16", :class => "flagsimg", :alt => t(:show)) %></td>
   </tr>
   <tr>
     <td><%= t(:localization) %></td>
-    <td><img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @profile.latitude %>,<%= @profile.longitude %>&zoom=16&size=400x400&markers=color:red%7Ccolor:blue%7C<%= @profile.latitude %>,<%= @profile.longitude %>&sensor=true"></td>
+    <td><img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @profile.latitude %>,<%= @profile.longitude %>&zoom=16&size=520x400&markers=color:red%7Ccolor:blue%7C<%= @profile.latitude %>,<%= @profile.longitude %>&sensor=true"></td>
   </tr>
 </table>
 

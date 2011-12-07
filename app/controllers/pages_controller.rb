@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  before_filter :authenticate_user!, :except => [:home, :contact, :privacy, :about]
+
   def home
   end
 

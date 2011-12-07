@@ -7,4 +7,5 @@ class UsersDisciplines < ActiveRecord::Base
   belongs_to :user
   belongs_to :discipline
   
+  attr_accessible :faculty_id
 end

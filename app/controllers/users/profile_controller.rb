@@ -4,12 +4,21 @@ class Users::ProfileController < ApplicationController
   # GET /profile
   # GET /profile.json
   def index
-    @profile = Profile.find_by_user_id(current_user)
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @profile }
+    @temp_profile = Profile.find_by_user_id(current_user)
+    if @temp_profile != nil
+      if @temp_profile.year == 0
+        redirect_to edit_users_profile_path
+      else
+        @profile = Profile.find_by_user_id(current_user)
+        respond_to do |format|
+        format.html # index.html.erb
+        format.json { render json: @profile }
+        end
+      end
+    else
+      redirect_to new_users_profile_path
     end
+    
   end
 
   # GET /profile/1
@@ -42,12 +51,13 @@ class Users::ProfileController < ApplicationController
   # POST /profile
   # POST /profile.json
   def create
-    @profile = Profile.new(params[:discipline])
+    @profile = Profile.new(params[:profile])
     @profile.profile_id = UUIDTools::UUID.timestamp_create().to_s
+    @profile.user_id = current_user.id
 
     respond_to do |format|
       if @profile.save
-        format.html { redirect_to @profile, notice: t(:discipline_successfully_created) }
+        format.html { redirect_to users_profile_index_path, notice: t(:discipline_successfully_created) }
         format.json { render json: @profile, status: :created, location: @profile }
       else
         format.html { render action: "new" }

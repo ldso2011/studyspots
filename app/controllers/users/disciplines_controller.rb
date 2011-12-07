@@ -1,7 +1,7 @@
 class Users::DisciplinesController < ApplicationController
   helper_method :sort_column, :sort_direction
   before_filter :authenticate_user!
-  
+
   # GET /disciplines
   # GET /disciplines.json
   def index
@@ -12,7 +12,7 @@ class Users::DisciplinesController < ApplicationController
       format.json { render json: @users_disciplines }
     end
   end
-  
+
   # GET /disciplines/1
   # GET /disciplines/1.json
   def show
@@ -33,11 +33,6 @@ class Users::DisciplinesController < ApplicationController
       format.html # new.html.erb
       format.json { render json: @users_disciplines }
     end
-  end
-
-  # GET /disciplines/1/edit
-  def edit
-    @users_disciplines = UsersDisciplines.find(params[:id])
   end
 
   # POST /disciplines
@@ -80,7 +75,7 @@ class Users::DisciplinesController < ApplicationController
     @users_disciplines.destroy
 
     respond_to do |format|
-      format.html { redirect_to disciplines_url }
+      format.html { redirect_to users_disciplines_url }
       format.json { head :ok }
     end
   end

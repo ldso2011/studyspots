@@ -57,3 +57,7 @@ pt:
   discipline_edit: "Editar Disciplina"
   discipline_code: "Código"
   discipline_semester: "Semestre"
+  # Profile
+  profile_new: "Subscrever Disciplina"
+  profile_first_name: "Primeiro Nome"
+  profile_last_name: "Ultimo Nome"

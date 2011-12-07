@@ -1,11 +1,14 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.1'
-
 gem 'sqlite3'
-gem 'will_paginate', '3.0.pre2'
 gem 'devise', '1.4.7'
+gem 'will_paginate', '3.0.pre2'
 gem 'gmaps4rails'
+
+# UUID
+gem 'uuidtools'
+gem 'activeuuid'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -16,10 +19,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
-# UUID
-gem 'uuidtools'
-gem 'activeuuid'
 
 group :test do
   # Pretty printed test output

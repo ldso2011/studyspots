@@ -10,9 +10,13 @@ class ApplicationController < ActionController::Base
   # Define a linguagem do site.
   def set_locale
     if(user_signed_in?)
-      I18n.locale = Profile.find_by_user_id(current_user.id).language
+      if Profile.find_by_user_id(current_user.id) == nil
+        I18n.locale = I18n.default_locale
+      else
+        I18n.locale = Profile.find_by_user_id(current_user.id).language
+      end
     else
-      I18n.locale = params[:locale] || I18n.default_locale || I18n.locale = extract_locale_from_accept_language_header
+      I18n.locale = params[:locale] || I18n.locale = extract_locale_from_accept_language_header || I18n.default_locale
     end
   end
   # Extrai a linguagem do browser utilizado.
@@ -21,7 +25,6 @@ class ApplicationController < ActionController::Base
     request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
   end
   # Linguagem por defeito do site.
-  private
   def default_url_options(options={})
     { :locale => I18n.locale }
   end

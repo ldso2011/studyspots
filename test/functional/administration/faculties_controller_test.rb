@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class FacultiesControllerTest < ActionController::TestCase
+class Administration::FacultiesControllerTest < ActionController::TestCase
   setup do
     @faculty = faculties(:one)
   end
