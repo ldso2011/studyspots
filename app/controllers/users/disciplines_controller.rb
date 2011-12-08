@@ -38,12 +38,13 @@ class Users::DisciplinesController < ApplicationController
   # POST /disciplines
   # POST /disciplines.json
   def create
-    @users_disciplines = UsersDisciplines.new(params[:discipline])
-    @users_disciplines.discipline_id = UUIDTools::UUID.timestamp_create().to_s
+    @users_disciplines = UsersDisciplines.new(params[:users_disciplines])
+    @users_disciplines.users_disciplines_id = UUIDTools::UUID.timestamp_create().to_s
+    @users_disciplines.user_id = current_user.id
 
     respond_to do |format|
       if @users_disciplines.save
-        format.html { redirect_to @users_disciplines, notice: t(:discipline_successfully_created) }
+        format.html { redirect_to users_disciplines_path, notice: t(:discipline_successfully_created) }
         format.json { render json: @users_disciplines, status: :created, location: @users_disciplines }
       else
         format.html { render action: "new" }

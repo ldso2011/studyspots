@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111201212550) do
+ActiveRecord::Schema.define(:version => 20111207085815) do
 
   create_table "courses", :id => false, :force => true do |t|
     t.string   "course_id",  :limit => 36,  :null => false
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20111201212550) do
     t.string   "name",       :limit => 100, :null => false
     t.string   "acronym",    :limit => 10,  :null => false
     t.integer  "degree",                    :null => false
-    t.string   "begin",      :limit => 9,   :null => false
+    t.string   "begin",                     :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(:version => 20111201212550) do
     t.string   "acronym",       :limit => 10,  :null => false
     t.string   "course_id",     :limit => 36,  :null => false
     t.integer  "semester",                     :null => false
-    t.integer  "year"
+    t.integer  "year",                         :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -41,18 +41,39 @@ ActiveRecord::Schema.define(:version => 20111201212550) do
     t.string   "name",         :limit => 100, :null => false
     t.string   "acronym",      :limit => 10,  :null => false
     t.boolean  "faculty_type",                :null => false
+    t.string   "url",          :limit => 100, :null => false
+    t.string   "address",      :limit => 150
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "url",          :limit => 100, :null => false
   end
 
   create_table "profiles", :id => false, :force => true do |t|
-    t.string   "profile_id", :limit => 36, :null => false
-    t.integer  "user_id",                  :null => false
-    t.string   "faculty_id", :limit => 36, :null => false
-    t.string   "course_id",  :limit => 36, :null => false
-    t.integer  "year",                     :null => false
-    t.string   "language",   :limit => 2,  :null => false
+    t.string   "profile_id", :limit => 36,  :null => false
+    t.integer  "user_id",                   :null => false
+    t.string   "first_name", :limit => 50,  :null => false
+    t.string   "last_name",  :limit => 50,  :null => false
+    t.string   "faculty_id", :limit => 36,  :null => false
+    t.string   "course_id",  :limit => 36,  :null => false
+    t.integer  "year",                      :null => false
+    t.string   "language",   :limit => 2,   :null => false
+    t.string   "address",    :limit => 150
+    t.float    "latitude"
+    t.float    "longitude"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spots", :id => false, :force => true do |t|
+    t.string   "spot_id",       :limit => 36,  :null => false
+    t.string   "discipline_id", :limit => 36,  :null => false
+    t.string   "user_id",                      :null => false
+    t.string   "name",                         :null => false
+    t.string   "local",         :limit => 50,  :null => false
+    t.string   "address",       :limit => 150
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

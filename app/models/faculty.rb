@@ -8,6 +8,8 @@ class Faculty < ActiveRecord::Base
   
   attr_accessible :faculty_id, :name, :acronym, :faculty_type, :url
   
+  validates_uniqueness_of :name, :acronym
+  
   def self.search(search)
     if search
       where('name LIKE ?', "%#{search}%")

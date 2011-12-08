@@ -11,6 +11,10 @@ StudySpots::Application.routes.draw do
     resources :disciplines, :controller => "administration/disciplines"
   end
   
+  scope :path => "(:locale)", :locale => Possible_locales do
+    resources :spots
+  end
+  
   devise_for :users, :path => "(:locale)", :locale => Possible_locales, :path_names => { 
     :sign_up => "register",
     :sign_in => "login",
@@ -19,6 +23,7 @@ StudySpots::Application.routes.draw do
 
   match '(:locale)/privacy' => "pages#privacy" 
   match '(:locale)/users/profile/new' => "users/profile#create" 
+  match '(:locale)/users/disciplines/new' => "users/disciplines#create" 
   match ':locale/' => "pages#home"
   
   root :to => "pages#home", :locale => Possible_locales

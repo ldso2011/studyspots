@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<div class="field">
+  <table>
+    <tr>
+      <th><%= t(:parameters) %></th>
+      <th><%= t(:description) %></th>
+    </tr>
+    <tr>
+      <td><%= t(:faculty) %></td>
+      <td><%= @course.faculty.acronym + " - " + @course.faculty.name %></td>
+    </tr>
+    <tr>
+      <td><%= t(:name) %></td>
+      <td><%= @course.name %></td>
+    </tr>
+    <tr>
+      <td><%= t(:acronym) %></td>
+      <td><%= @course.acronym %></td>
+    </tr>
+    <tr>
+      <td><%= t(:course_degree) %></td>
+      <td><% case @course.degree when 1 %><%= t(:course_undergraduate) %>
+<% when 2 %><%= t(:course_integrated_masters) %>
+<% when 3 %><%= t(:course_masters) %>
+<% when 4 %><%= t(:course_doctoral_programs) %><% else %><%= t(:not_defined) %><% end %></td>
+    </tr>
+    <tr>
+      <td><%= t(:course_begin) %></td>
+      <td><%= @course.begin %></td>
+    </tr>
+  </table>
+</div>
+
+<%= link_to t(:edit), edit_course_path(@course) %> |
+<%= link_to t(:back), courses_path %>

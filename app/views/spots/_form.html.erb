@@ -1,0 +1,37 @@
+<%= form_for(@course) do |f| %>
+  <% if @course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@course.errors.count, "error") %> <%= t(:course_prohibited_saved) %></h2>
+
+      <ul>
+      <% @course.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label t(:faculty) %><br />
+    <%= f.collection_select :faculty_id, Faculty.find(:all), :faculty_id, :name, :prompt => t(:faculty_select) %>
+  </div>
+  <div class="field">
+    <%= f.label t(:name) %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label t(:acronym) %><br />
+    <%= f.text_field :acronym %>
+  </div>
+  <div class="field">
+    <%= f.label t(:course_degree) %><br />
+    <%= f.select :degree, options_for_select([[t(:course_undergraduate), "1"], [t(:course_integrated_masters), "2"], [t(:course_masters), "3"], [t(:course_doctoral_programs), "4"]]) %>
+  </div>
+  <div class="field">
+    <%= f.label t(:course_begin) %><br />
+    <%= f.select :begin, options_for_select([["2006/2007", "2006/2007"], ["2007/2008", "2007/2008"], ["2008/2009", "2008/2009"], ["2009/2010", "2009/2010"]]) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
