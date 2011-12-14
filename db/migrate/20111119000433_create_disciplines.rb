@@ -5,7 +5,7 @@ class CreateDisciplines < ActiveRecord::Migration
       t.string :code, :limit => 7, :null => false
       t.string :name, :limit => 100,  :null => false
       t.string :acronym, :limit => 10, :null => false
-      t.string :course_id, :limit => 36, :null => false
+      t.string :course_id, :limit => 36, :null => false, :on_delete => :cascade, :on_update => :cascade
       t.integer :semester, :null => false
       t.integer :year, :null => false
       t.timestamps

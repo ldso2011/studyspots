@@ -1,10 +1,10 @@
-<%= form_for @users_disciplines, :url => new_users_discipline_path do |f| %>
-  <% if @users_disciplines.errors.any? %>
+<%= form_for @userdisciplines, :url => new_users_discipline_path do |f| %>
+  <% if @userdisciplines.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@users_disciplines.errors.count, "error") %> <%= t(:discipline_prohibited_saved) %></h2>
+      <h2><%= pluralize(@userdisciplines.errors.count, "error") %> <%= t(:discipline_prohibited_saved) %></h2>
 
       <ul>
-      <% @users_disciplines.errors.full_messages.each do |msg| %>
+      <% @userdisciplines.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label t(:discipline) %><br />
-    <%= collection_select(:users_disciplines, :discipline_id, Discipline.find(:all), :discipline_id, :name, :prompt => t(:discipline_select)) %>
+    <%= f.collection_select(:discipline_id, Discipline.find(:all), :discipline_id, :name) %>
   </div>
  
   <div class="actions">

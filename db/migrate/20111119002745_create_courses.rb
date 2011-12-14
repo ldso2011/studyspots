@@ -2,7 +2,7 @@ class CreateCourses < ActiveRecord::Migration
   def self.up
     create_table(:courses, :id => false) do |t|
       t.string :course_id, :limit => 36, :null => false, :primary => true, :on_delete => :cascade, :on_update => :cascade
-      t.string :faculty_id, :limit => 36, :null => false
+      t.string :faculty_id, :limit => 36, :null => false, :on_delete => :cascade, :on_update => :cascade
       t.string :name, :limit => 100,  :null => false
       t.string :acronym, :limit => 10, :null => false
       t.integer :degree, :null => false

@@ -5,6 +5,9 @@ gem 'sqlite3'
 gem 'devise', '1.4.7'
 gem 'will_paginate', '3.0.pre2'
 gem 'gmaps4rails'
+gem 'foreigner'
+gem 'test-unit'
+gem 'composite_primary_keys'
 
 # UUID
 gem 'uuidtools'

@@ -5,8 +5,8 @@ class User < ActiveRecord::Base
 
   attr_accessible :email, :password, :password_confirmation, :remember_me, :admin, :confirmed_at, :confirmation_sent_at
   
-  has_many :disciplines
-  has_many :disciplines, :through => :usersdisciplines
+  has_many :userdisciplines, :dependent => :destroy, :foreign_key  => [:discipline_id, :user_id]
+  has_many :disciplines, :through => :userdisciplines
   
   validates_uniqueness_of :email
 end

@@ -4,7 +4,7 @@ class Faculty < ActiveRecord::Base
   # Usa-se quando a chave primária não se chama 'id'.
   set_primary_key :faculty_id
   # Relações entre 'Models'.
-  has_many :course
+  has_many :course, :dependent => :destroy
   
   attr_accessible :faculty_id, :name, :acronym, :faculty_type, :url
   

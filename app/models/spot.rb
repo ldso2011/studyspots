@@ -8,4 +8,12 @@ class Spot < ActiveRecord::Base
   belongs_to :discipline
   
   attr_accessible :spot_id, :discipline_id, :user_id, :name, :local
+  
+  def self.search(search)
+    if search
+      where('name LIKE ?', "%#{search}%")
+    else
+      scoped
+    end
+  end
 end

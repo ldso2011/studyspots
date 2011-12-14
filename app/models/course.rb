@@ -5,7 +5,7 @@ class Course < ActiveRecord::Base
   set_primary_key :course_id
   # Relações entre 'Models'.
   belongs_to :faculty
-  has_many :discipline
+  has_many :discipline, :dependent => :destroy
   
   attr_accessible :course_id, :faculty_id, :name ,:acronym, :degree, :begin
 

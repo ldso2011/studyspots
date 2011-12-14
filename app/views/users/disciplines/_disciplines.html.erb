@@ -7,13 +7,13 @@
     <th><%= t(:options) %></th>
   </tr>
 
-<% @users_disciplines.each do |userdiscipline| %>
+<% @userdisciplines.each do |userdiscipline| %>
   <tr>
     <td><%= userdiscipline.discipline.acronym %></td>
     <td><%= userdiscipline.discipline.name %></td>
-    <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:destroy)), userdiscipline, confirm: 'Are you sure?', method: :delete %></td>
+    <td style="width:16px"><= link_to image_tag('File_delete16.png', :alt => t(:destroy)), userdiscipline, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
-<%= will_paginate @users_disciplines %>
+<%= will_paginate @userdisciplines %>
 <br />

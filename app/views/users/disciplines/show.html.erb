@@ -8,15 +8,15 @@
     </tr>
     <tr>
       <td><%= t(:faculty) %></td>
-      <td><%= @users_disciplines.course.faculty.acronym + " - " + @users_disciplines.course.faculty.name %></td>
+      <td><%= @user_disciplines.course.faculty.acronym + " - " + @user_disciplines.course.faculty.name %></td>
     </tr>
     <tr>
       <td><%= t(:name) %></td>
-      <td><%= @users_disciplines.name %></td>
+      <td><%= @user_disciplines.name %></td>
     </tr>
     <tr>
       <td><%= t(:acronym) %></td>
-      <td><%= @users_disciplines.acronym %></td>
+      <td><%= @user_disciplines.acronym %></td>
     </tr>
     <tr>
       <td><%= t(:course_degree) %></td>
@@ -29,5 +29,5 @@
   </table>
 </div>
 
-<%= link_to t(:edit), edit_discipline_path(@users_disciplines) %> |
+<%= link_to t(:edit), edit_discipline_path(@user_disciplines) %> |
 <%= link_to t(:back), disciplines_path %>

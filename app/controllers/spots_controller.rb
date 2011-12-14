@@ -2,82 +2,83 @@ class SpotsController < ApplicationController
   helper_method :sort_column, :sort_direction
   before_filter :authenticate_user!
 
-  # GET /courses
-  # GET /courses.json
+  # GET /spots
+  # GET /spots.json
   def index
-    @courses = Course.search(params[:search]).order(sort_column + " " + sort_direction).paginate(:per_page => 10, :page =>params[:page])
+    @spots = Spot.search(params[:search]).order(sort_column + " " + sort_direction).paginate(:per_page => 10, :page =>params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @courses }
+      format.json { render json: @spots }
     end
   end
 
-  # GET /courses/1
-  # GET /courses/1.json
+  # GET /spots/1
+  # GET /spots/1.json
   def show
-    @course = Course.find(params[:id])
+    @spot = Spot.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @course }
+      format.json { render json: @spot }
     end
   end
 
-  # GET /courses/new
-  # GET /courses/new.json
+  # GET /spots/new
+  # GET /spots/new.json
   def new
-    @course = Course.new
+    @spot = Spot.new
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @course }
+      format.json { render json: @spot }
     end
   end
 
-  # GET /courses/1/edit
+  # GET /spots/1/edit
   def edit
-    @course = Course.find(params[:id])
+    @spot = Spot.find(params[:id])
   end
 
-  # POST /courses
-  # POST /courses.json
+  # POST /spots
+  # POST /spots.json
   def create
-    @course = Course.new(params[:course])
-    @course.course_id = UUIDTools::UUID.timestamp_create().to_s
+    @spot = Spot.new(params[:spot])
+    @spot.spot_id = UUIDTools::UUID.timestamp_create().to_s
+    @spot.user_id = current_user.id
 
     respond_to do |format|
-      if @course.save
-        format.html { redirect_to @course, notice: t(:course_successfully_created) }
-        format.json { render json: @course, status: :created, location: @course }
+      if @spot.save
+        format.html { redirect_to @spot, notice: t(:spot_successfully_created) }
+        format.json { render json: @spot, status: :created, location: @spot }
       else
         format.html { render action: "new" }
-        format.json { render json: @course.errors, status: :unprocessable_entity }
+        format.json { render json: @spot.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # PUT /courses/1
-  # PUT /courses/1.json
+  # PUT /spots/1
+  # PUT /spots/1.json
   def update
-    @course = Course.find(params[:id])
+    @spot = Spot.find(params[:id])
 
     respond_to do |format|
-      if @course.update_attributes(params[:course])
-        format.html { redirect_to @course, notice: t(:course_successfully_updated) }
+      if @spot.update_attributes(params[:course])
+        format.html { redirect_to @spot, notice: t(:course_successfully_updated) }
         format.json { head :ok }
       else
         format.html { render action: "edit" }
-        format.json { render json: @course.errors, status: :unprocessable_entity }
+        format.json { render json: @spot.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # DELETE /courses/1
-  # DELETE /courses/1.json
+  # DELETE /spots/1
+  # DELETE /spots/1.json
   def destroy
-    @course = Course.find(params[:id])
-    @course.destroy
+    @spot = Spot.find(params[:id])
+    @spot.destroy
 
     respond_to do |format|
       format.html { redirect_to courses_url }
@@ -87,7 +88,7 @@ class SpotsController < ApplicationController
 
   private
   def sort_column
-    Course.column_names.include?(params[:sort]) ? params[:sort] : "name"
+    Spot.column_names.include?(params[:sort]) ? params[:sort] : "name"
   end
 
   def sort_direction

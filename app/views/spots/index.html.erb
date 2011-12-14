@@ -1,11 +1,11 @@
-<h1><%= t(:course_list) %></h1>
+<h1><%= t(:spot_list) %></h1>
 
-<%= form_tag courses_path, :method => 'get', :id => "courses_search" do %>
+<%= form_tag courses_path, :method => 'get', :id => "spots_search" do %>
   <p>
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search", :name => nil %>
   </p>
-  <div id="courses"><%= render 'courses' %></div>
+  <div id="spots"><%= render 'spots' %></div>
 <% end %>
 
-<%= link_to t(:course_new), new_course_path %>
+<%= link_to t(:spot_new), new_spot_path %>
