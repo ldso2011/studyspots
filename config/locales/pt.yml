@@ -24,6 +24,9 @@ pt:
   year: "Ano"
   language: "Linguagem"
   localization: "Localização"
+  address: "Morada"
+  portuguese: "Português"
+  english: "Inglês"
   # Faculties
   faculty_prohibited_saved: "Faculdade proibida de ser registada:"
   faculty_successfully_created: "Faculdade criada com sucesso."
@@ -61,3 +64,7 @@ pt:
   profile_new: "Subscrever Disciplina"
   profile_first_name: "Primeiro Nome"
   profile_last_name: "Ultimo Nome"
+  profile_edit: "Editar Perfil"
+  profile_prohibited_saved: "Perfil proibida de ser registada:"
+  profile_successfully_created: "Perfil criada com sucesso."
+  profile_successfully_updated: "Perfil actualizada com sucesso."

@@ -1,6 +1,3 @@
-<h1>Editing profile</h1>
-
+<h1><%= t(:profile_edit) %></h1>
 <%= render 'form' %>
-
-<%= link_to 'Show', @profile %> |
-<%= link_to 'Back', disciplines_path %>
+<%= link_to t(:back), users_profile_index_path %>

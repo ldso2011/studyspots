@@ -24,7 +24,7 @@ class Users::ProfileController < ApplicationController
   # GET /profile/1
   # GET /profile/1.json
   def show
-    @profile = Profile.find(params[:id])
+    @profile = Profile.find_by_user_id(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -57,7 +57,7 @@ class Users::ProfileController < ApplicationController
 
     respond_to do |format|
       if @profile.save
-        format.html { redirect_to users_profile_index_path, notice: t(:discipline_successfully_created) }
+        format.html { redirect_to users_profile_index_path, notice: t(:profile_successfully_created) }
         format.json { render json: @profile, status: :created, location: @profile }
       else
         format.html { render action: "new" }
@@ -69,11 +69,12 @@ class Users::ProfileController < ApplicationController
   # PUT /profile/1
   # PUT /profile/1.json
   def update
-    @profile = UsersDisciplines.find(params[:id])
-
+    #@profile = UsersDisciplines.find(params[:id])
+    @profile = Profile.find_by_user_id(current_user.id)
+ 
     respond_to do |format|
-      if @profile.update_attributes(params[:discipline])
-        format.html { redirect_to @profile, notice: t(:discipline_successfully_updated) }
+      if @profile.update_attributes(params[:profile])
+        format.html { redirect_to users_profile_index_path, notice: t(:profile_successfully_updated) }
         format.json { head :ok }
       else
         format.html { render action: "edit" }

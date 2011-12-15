@@ -1,8 +1,7 @@
 <%= form_for @profile, :url => new_users_profile_path do |f| %>
   <% if @profile.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@profile.errors.count, "error") %> <%= t(:discipline_prohibited_saved) %></h2>
-
+      <h2><%= pluralize(@profile.errors.count, "error") %> <%= t(:profile_prohibited_saved) %></h2>
       <ul>
       <% @profile.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -10,7 +9,6 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
     <%= f.label t(:profile_first_name) %><br />
     <%= f.text_field :first_name %>
@@ -21,11 +19,11 @@
   </div>
   <div class="field">
     <%= f.label t(:faculty) %><br />
-    <%= f.collection_select :faculty_id, Faculty.find(:all), :faculty_id, :name, :prompt => t(:faculty_select) %>
+    <%= f.collection_select :faculty_id, Faculty.find(:all), :faculty_id, :name %>
   </div>
   <div class="field">
     <%= f.label t(:course) %><br />
-    <%= f.collection_select :course_id, Course.find(:all), :course_id, :name, :prompt => t(:course_select) %>
+    <%= f.collection_select :course_id, Course.find(:all), :course_id, :name %>
   </div>
   <div class="field">
     <%= f.label t(:year) %><br />
@@ -33,7 +31,7 @@
   </div>
   <div class="field">
     <%= f.label t(:language) %><br />
-    <%= f.text_field :language %>
+    <%= f.select :language, options_for_select([[t(:english), "en"], [t(:portuguese), "pt"]]) %>
   </div>
   <div class="actions">
     <%= f.submit %>

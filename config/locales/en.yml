@@ -24,6 +24,9 @@ en:
   year: "Year"
   language: "Language"
   localization: "Localization"
+  address: "Address"
+  portuguese: "Portuguese"
+  english: "English"
   # Faculties
   faculty_prohibited_saved: "prohibited this faculty from being saved:"
   faculty_successfully_created: "Faculty was successfully created."
@@ -61,3 +64,7 @@ en:
   profile_new: "Subscrive Discipline"
   profile_first_name: "First Name"
   profile_last_name: "Last Name"
+  profile_edit: "Edit Profile"
+  profile_prohibited_saved: "prohibited this profile from being saved:"
+  profile_successfully_created: "Profile was successfully created."
+  profile_successfully_updated: "Profile was successfully updated."

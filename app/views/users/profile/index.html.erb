@@ -1,11 +1,9 @@
 <h1><%= t(:profile) %></h1>
-
 <table class="pretty">
   <tr>
     <th><%= t(:parameters) %></th>
     <th><%= t(:description) %></th>
   </tr>
-
   <tr>
     <td><%= t(:name) %></td>
     <td><%= @profile.first_name %> <%= @profile.last_name %></td>
@@ -30,12 +28,18 @@
     <td><%= t(:language) %></td>
     <td><%= image_tag('flags/' + @profile.language + '.png', :size => "16x16", :class => "flagsimg", :alt => t(:show)) %></td>
   </tr>
+  <% if((@profile.address != nil && @profile.address != "" && @profile.address != 0)) %>
+  <tr>
+    <td><%= t(:address) %></td>
+    <td><%= @profile.address %></td>
+  </tr>
+  <% end %>
+  <% if((@profile.latitude != nil && @profile.latitude != "" && @profile.latitude != 0) && (@profile.longitude != nil && @profile.longitude != "" && @profile.longitude != 0)) %>
   <tr>
     <td><%= t(:localization) %></td>
     <td><img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @profile.latitude %>,<%= @profile.longitude %>&zoom=16&size=520x400&markers=color:red%7Ccolor:blue%7C<%= @profile.latitude %>,<%= @profile.longitude %>&sensor=true"></td>
   </tr>
+  <% end %>
 </table>
-
 <br />
-
-<%= link_to t(:profile), users_profile_index_path %>
+<%= link_to t(:profile_edit), edit_users_profile_path(@profile.profile_id) %>
