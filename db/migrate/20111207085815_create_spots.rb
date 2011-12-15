@@ -6,7 +6,6 @@ class CreateSpots < ActiveRecord::Migration
       t.string :user_id, :null => false
       t.string :name, :null => false
       t.string :local, :limit => 50, :null => false
-      t.string :address, :limit => 150
       t.float :latitude
       t.float :longitude
       t.timestamps

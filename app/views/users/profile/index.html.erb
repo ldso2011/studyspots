@@ -28,10 +28,10 @@
     <td><%= t(:language) %></td>
     <td><%= image_tag('flags/' + @profile.language + '.png', :size => "16x16", :class => "flagsimg", :alt => t(:show)) %></td>
   </tr>
-  <% if((@profile.address != nil && @profile.address != "" && @profile.address != 0)) %>
+  <% if((@profile.local != nil && @profile.local != "" && @profile.local != 0)) %>
   <tr>
-    <td><%= t(:address) %></td>
-    <td><%= @profile.address %></td>
+    <td><%= t(:local) %></td>
+    <td><%= @profile.local %></td>
   </tr>
   <% end %>
   <% if((@profile.latitude != nil && @profile.latitude != "" && @profile.latitude != 0) && (@profile.longitude != nil && @profile.longitude != "" && @profile.longitude != 0)) %>

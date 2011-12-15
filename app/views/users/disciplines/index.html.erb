@@ -1,11 +1,24 @@
 <h1><%= t(:discipline_list) %></h1>
 
-<%= form_tag users_disciplines_path, :method => 'get', :id => "disciplines_search" do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
-  </p>
-  <div id="disciplines"><%= render 'disciplines' %></div>
+<%= hidden_field_tag :direction, params[:direction] %>
+<%= hidden_field_tag :sort, params[:sort] %>
+<table class="pretty">
+  <tr>
+    <th><%= sortable t(:acronym) %></th>
+    <th><%= sortable t(:discipline) %></th>
+    <th colspan="2"><%= t(:options) %></th>
+  </tr>
+
+<% @userdisciplines.each do |userdiscipline| %>
+  <tr>
+    <td><%= userdiscipline.discipline.acronym %></td>
+    <td><%= userdiscipline.discipline.name %></td>
+    <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:destroy)), "disciplines/" + userdiscipline.user_disciplines_id + "/delete", confirm: 'Are you sure?', method: :delete %></td>
+    <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:spots)), "disciplines/" + userdiscipline.discipline_id + "/spots" %></td>
+  </tr>
 <% end %>
+</table>
+<%= will_paginate @userdisciplines %>
+<br />
 
 <%= link_to t(:discipline_new), new_users_discipline_path %>

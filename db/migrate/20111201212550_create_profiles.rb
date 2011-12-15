@@ -9,7 +9,7 @@ class CreateProfiles < ActiveRecord::Migration
       t.string :course_id, :limit => 36, :null => false
       t.integer :year, :null => false
       t.string :language, :limit => 2, :null => false
-      t.string :address, :limit => 150
+      t.string :local, :limit => 150
       t.float :latitude
       t.float :longitude
       t.timestamps

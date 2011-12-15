@@ -11,6 +11,16 @@ class Users::DisciplinesController < ApplicationController
       format.json { render json: @userdisciplines.to_json(:include => :discipline, :only => [:name, :discipline_id, :user_disciplines_id, :user_id, :acronym ]) }
     end
   end
+  
+  # GET /disciplines/1/spots
+  # GET /disciplines/1/spots.json
+  def spots
+    @spots = Spot.find_all_by_discipline_id(params[:id]).paginate(:per_page => 10, :page =>params[:page])
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @spots.to_json(:include => :discipline, :only => [:name, :discipline_id, :user_disciplines_id, :user_id, :acronym ]) }
+    end
+  end
 
   # GET /disciplines/1
   # GET /disciplines/1.json
@@ -75,7 +85,7 @@ class Users::DisciplinesController < ApplicationController
     @userdisciplines.destroy
 
     respond_to do |format|
-      format.html { redirect_to user_disciplines_url }
+      format.html { redirect_to users_disciplines_path }
       format.json { head :ok }
     end
   end

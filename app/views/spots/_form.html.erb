@@ -16,16 +16,12 @@
     <%= f.collection_select :discipline_id, Discipline.find(:all), :discipline_id, :name, :prompt => t(:discipline_select) %>
   </div>
   <div class="field">
-    <%= f.label t(:name) %><br />
+    <%= f.label t(:spot_name) %><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label t(:local) %><br />
+    <%= f.label t(:spot_local) %><br />
     <%= f.text_field :local %>
-  </div>
-  <div class="field">
-    <%= f.label t(:address) %><br />
-    <%= f.text_field :address %>
   </div>
   <div class="field">
     <%= f.label t(:latitude) %><br />

@@ -1,11 +1,20 @@
-<h1><%= t(:discipline_list) %></h1>
-
-<%= form_tag users_disciplines_path, :method => 'get', :id => "disciplines_search" do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
-  </p>
-  <div id="disciplines"><%= render 'disciplines' %></div>
+<h1><%= t(:spot_list) %></h1>
+<%= hidden_field_tag :direction, params[:direction] %>
+<%= hidden_field_tag :sort, params[:sort] %>
+<table class="pretty">
+  <tr>
+    <th><%= sortable "name", t(:name) %></th>
+    <th colspan="3"><%= t(:options) %></th>
+  </tr>
+<% @spots.each do |spot| %>
+  <tr>
+    <td><%= spot.name %></td>
+    <td style="width:16px"><%= link_to image_tag('File_info16.png', :alt => t(:show)), spot %></td>
+    <td style="width:16px"><%= link_to image_tag('File_edit16.png', :alt => t(:edit)), edit_spot_path(spot) %></td>
+    <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:destroy)), spot, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
 <% end %>
-
-<%= link_to t(:discipline_new), new_users_discipline_path %>
+</table>
+<%= will_paginate @spots %>
+<br />
+<%= link_to t(:spot_new), new_spot_path %>

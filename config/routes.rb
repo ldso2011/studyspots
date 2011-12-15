@@ -23,6 +23,8 @@ StudySpots::Application.routes.draw do
 
   match '(:locale)/privacy' => "pages#privacy" 
   match '(:locale)/users/profile/new' => "users/profile#create" 
+  match '(:locale)/users/disciplines/:id/spots' => "users/disciplines#spots" 
+  match '(:locale)/users/disciplines/:id/delete' => "users/disciplines#destroy" 
   match '(:locale)/users/disciplines/new' => "users/disciplines#create" 
   match ':locale/' => "pages#home"
   

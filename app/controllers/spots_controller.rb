@@ -12,7 +12,7 @@ class SpotsController < ApplicationController
       format.json { render json: @spots }
     end
   end
-
+  
   # GET /spots/1
   # GET /spots/1.json
   def show
