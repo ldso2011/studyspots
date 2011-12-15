@@ -5,9 +5,9 @@ class Discipline < ActiveRecord::Base
   set_primary_key :discipline_id
   # Relações entre 'Models'.
   belongs_to :course
+  has_many :spots
   has_many :userdisciplines, :dependent => :delete_all
-  #has_many :users, :through => :userdisciplines
-  #has_many :usersdisciplines, :through => :discipline, :dependent => :destroy
+  has_many :users, :through => :userdisciplines
   
   attr_accessible :discipline_id, :code, :name, :acronym, :course_id, :semester, :year
   

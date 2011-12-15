@@ -8,7 +8,7 @@ class Users::DisciplinesController < ApplicationController
     @userdisciplines = UserDisciplines.find_all_by_user_id(current_user).paginate(:per_page => 10, :page =>params[:page])
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @userdisciplines.to_json(:include => :discipline, :only => [:name, :discipline_id, :user_disciplines_id, :user_id, :acronym ]) }
+      format.json { render json: @userdisciplines.to_json(:include => [:discipline], :only => [:name, :discipline_id, :user_disciplines_id, :user_id, :acronym ]) }
     end
   end
   
@@ -18,7 +18,7 @@ class Users::DisciplinesController < ApplicationController
     @spots = Spot.find_all_by_discipline_id(params[:id]).paginate(:per_page => 10, :page =>params[:page])
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @spots.to_json(:include => :discipline, :only => [:name, :discipline_id, :user_disciplines_id, :user_id, :acronym ]) }
+      format.json { render json: @spots.to_json(:only => [:name, :spot_id]) }
     end
   end
 

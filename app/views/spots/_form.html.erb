@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label t(:discipline) %><br />
-    <%= f.collection_select :discipline_id, Discipline.find(:all), :discipline_id, :name, :prompt => t(:discipline_select) %>
+    <%= f.collection_select :discipline_id, Discipline.find(:all), :discipline_id, :name %>
   </div>
   <div class="field">
     <%= f.label t(:spot_name) %><br />

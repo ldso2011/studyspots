@@ -6,13 +6,15 @@
   <tr>
     <th><%= sortable t(:acronym) %></th>
     <th><%= sortable t(:discipline) %></th>
+    <th><%= "Spots" %></th>
     <th colspan="2"><%= t(:options) %></th>
   </tr>
 
 <% @userdisciplines.each do |userdiscipline| %>
   <tr>
-    <td><%= userdiscipline.discipline.acronym %></td>
+    <td><%= link_to userdiscipline.discipline.acronym, "disciplines/" + userdiscipline.discipline_id + "/spots" %></td>
     <td><%= userdiscipline.discipline.name %></td>
+    <td><%= Spot.count(:conditions => "discipline_id = '"+ userdiscipline.discipline_id + "'") %></td>
     <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:destroy)), "disciplines/" + userdiscipline.user_disciplines_id + "/delete", confirm: 'Are you sure?', method: :delete %></td>
     <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:spots)), "disciplines/" + userdiscipline.discipline_id + "/spots" %></td>
   </tr>
