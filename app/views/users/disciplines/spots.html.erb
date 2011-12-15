@@ -1,0 +1,11 @@
+<h1><%= t(:discipline_list) %></h1>
+
+<%= form_tag users_disciplines_path, :method => 'get', :id => "disciplines_search" do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+  <div id="disciplines"><%= render 'disciplines' %></div>
+<% end %>
+
+<%= link_to t(:discipline_new), new_users_discipline_path %>
