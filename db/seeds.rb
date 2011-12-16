@@ -185,3 +185,20 @@ USER5 = User.create!(
   :confirmed_at => DateTime.now,
   :confirmation_sent_at => DateTime.now,
   :admin => 0)
+
+# UserDisciplines
+UserDisciplines.delete_all
+ADMINDISC1 = UserDisciplines.create!(
+  :user_disciplines_id => UUIDTools::UUID.timestamp_create().to_s,
+  :discipline_id => LDSO.discipline_id,
+  :user_id => ADMIN.id)
+
+# Spots
+Spot.delete_all
+SPOT1 = Spot.create!(
+  :spot_id => UUIDTools::UUID.timestamp_create().to_s,
+  :name => "Biblioteca",
+  :local => "FEUP",
+  :discipline_id => LDSO.discipline_id,
+  :user_id => ADMIN.id
+)

@@ -1,6 +1,18 @@
 <h1><%= t(:spot_show) %></h1>
 
-<%= render 'form' %>
+<%= hidden_field_tag :direction, params[:direction] %>
+<%= hidden_field_tag :sort, params[:sort] %>
+<table class="pretty">
+  <tr>
+    <th><%= sortable "name", t(:name) %></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= Profile.find_by_user_id(user.user_id).first_name %></td>
+  </tr>
+<% end %>
+</table>
 
 <%= link_to t(:edit), edit_spot_path(@spots) %> |
 <%= link_to t(:back), spots_path %>

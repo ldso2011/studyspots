@@ -13,9 +13,9 @@
     <td><%= faculty.acronym %></td>
     <td><%= faculty.name %></td>
     <td><% if (faculty.faculty_type == false) %><%= t(:faculty_type_public) %><% else %><%= t(:faculty_type_private) %><% end %></td>
-    <td style="width:16px"><%= link_to image_tag('File_info16.png', :alt => t(:show)), faculty %></td>
-    <td style="width:16px"><%= link_to image_tag('File_edit16.png', :alt => t(:edit)), edit_faculty_path(faculty) %></td>
-    <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:destroy)), faculty, confirm: 'Are you sure?', method: :delete %></td>
+    <td style="width:16px"><%= link_to image_tag('File_info16.png', :alt => t(:show), :title => t(:show)), faculty %></td>
+    <td style="width:16px"><%= link_to image_tag('File_edit16.png', :alt => t(:edit), :title => t(:edit)), edit_faculty_path(faculty) %></td>
+    <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:destroy), :title => t(:destroy)), faculty, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

@@ -17,9 +17,9 @@
     <td><%= discipline.name %></td>
     <td><%= discipline.code %></td>
     <td><%= discipline.semester %></td>
-    <td style="width:16px"><%= link_to image_tag('File_info16.png', :alt => t(:show)), discipline %></td>
-    <td style="width:16px"><%= link_to image_tag('File_edit16.png', :alt => t(:edit)), edit_discipline_path(discipline) %></td>
-    <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:destroy)), discipline, confirm: 'Are you sure?', method: :delete %></td>
+    <td style="width:16px"><%= link_to image_tag('File_info16.png', :alt => t(:show), :title => t(:show)), discipline %></td>
+    <td style="width:16px"><%= link_to image_tag('File_edit16.png', :alt => t(:edit), :title => t(:edit)), edit_discipline_path(discipline) %></td>
+    <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:destroy), :title => t(:destroy)), discipline, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

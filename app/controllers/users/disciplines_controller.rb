@@ -18,10 +18,29 @@ class Users::DisciplinesController < ApplicationController
     @spots = Spot.find_all_by_discipline_id(params[:id]).paginate(:per_page => 10, :page =>params[:page])
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @spots.to_json(:only => [:name, :spot_id]) }
+      format.json { render json: @spots.to_json(:only => [:name, :spot_id, :local]) }
     end
   end
 
+  # POST /disciplines/1/spots/2/join
+  # POST /disciplines/1/spots/2/join.json
+  def join
+    @userspot = UserSpots.new()
+    @userspot.user_spots_id = UUIDTools::UUID.timestamp_create().to_s
+    @userspot.spot_id = params[:id2]
+    @userspot.user_id = current_user.id
+
+    respond_to do |format|
+      if @userspot.save
+        format.html { redirect_to users_disciplines_path, notice: t(:discipline_successfully_created) }
+        format.json { render json: @userspot, status: :created, location: @userspot }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @userspot.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  
   # GET /disciplines/1
   # GET /disciplines/1.json
   def show

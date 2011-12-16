@@ -19,9 +19,9 @@
         <% when 3 %><%= t(:course_masters) %>
         <% when 4 %><%= t(:course_doctoral_programs) %>
         <% else %><%= t(:not_defined) %><% end %></td>
-    <td style="width:16px"><%= link_to image_tag('File_info16.png', :alt => t(:show)), course %></td>
-    <td style="width:16px"><%= link_to image_tag('File_edit16.png', :alt => t(:edit)), edit_course_path(course) %></td>
-    <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:destroy)), course, confirm: 'Are you sure?', method: :delete %></td>
+    <td style="width:16px"><%= link_to image_tag('File_info16.png', :alt => t(:show), :title => t(:show)), course %></td>
+    <td style="width:16px"><%= link_to image_tag('File_edit16.png', :alt => t(:edit), :title => t(:edit)), edit_course_path(course) %></td>
+    <td style="width:16px"><%= link_to image_tag('File_delete16.png', :alt => t(:destroy), :title => t(:destroy)), course, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
