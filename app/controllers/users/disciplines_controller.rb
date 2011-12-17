@@ -8,7 +8,7 @@ class Users::DisciplinesController < ApplicationController
     @userdisciplines = UserDisciplines.find_all_by_user_id(current_user).paginate(:per_page => 10, :page =>params[:page])
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @userdisciplines.to_json(:include => [:discipline], :only => [:name, :discipline_id, :user_disciplines_id, :user_id, :acronym ]) }
+      format.json { render json: @userdisciplines.to_json(:include => :discipline, :only => [:spot_id, :name, :discipline_id, :user_disciplines_id, :user_id, :acronym ]) }
     end
   end
   

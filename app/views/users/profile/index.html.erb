@@ -1,3 +1,35 @@
+<script src="http://maps.google.com/maps?file=api&amp;v=3&amp;sensor=true_or_false&amp;key=ABQIAAAAhT3c34ySXxI02NhBb3LGNBTJjwApPLscy2eDQJ6WoDAGjeHmzxRAs6GjblgrV7GaLiGK49cwgLO_kw" type="text/javascript"></script>
+<script type="text/javascript">
+  var geocoder;
+  var map; 
+  //The address that you want to show in Google Maps
+  var address = <%= @profile.latitude %> + "," + <%= @profile.longitude %>;
+  function load(){
+    // Create new google map object
+    map = new GMap2(document.getElementById("map"));
+    //Adds the zoom function on the map
+    map.addControl(new GSmallMapControl());
+    // Create new geocoding object
+    geocoder = new GClientGeocoder();
+    // Gets the information from geocode and send it to addAddressToMap
+    geocoder.getLocations(address, addAddressToMap);
+  }
+</script>
+<script type="text/javascript">
+  function addAddressToMap(response){
+    // Retrieve the object
+    place = response.Placemark[0];
+    // Retrieve the latitude and longitude. Important to get everything in one map
+    point = new GLatLng(place.Point.coordinates[1],place.Point.coordinates[0]);
+    // Center the map on this point
+    map.setCenter(point, 15);
+    // Create a marker
+    marker = new GMarker(point);
+    // Add the marker to map
+    map.addOverlay(marker);
+    // Add address information to marker
+    marker.openInfoWindowHtml(place.address);
+  }</script>
 <h1><%= t(:profile) %></h1>
 <table class="pretty">
   <tr>
@@ -28,6 +60,12 @@
     <td><%= t(:language) %></td>
     <td><%= image_tag('flags/' + @profile.language + '.png', :size => "16x16", :class => "flagsimg", :alt => t(:show)) %></td>
   </tr>
+  <% if(UserSpots.find_by_user_id(current_user.id) != nil) %>
+  <tr>
+    <td><%= t(:spot) %></td>
+    <td><%= @myspot.name %> @ <%= @myspot.local %></td>
+  </tr>
+  <% end %>
   <% if((@profile.local != nil && @profile.local != "" && @profile.local != 0)) %>
   <tr>
     <td><%= t(:local) %></td>
@@ -37,9 +75,16 @@
   <% if((@profile.latitude != nil && @profile.latitude != "" && @profile.latitude != 0) && (@profile.longitude != nil && @profile.longitude != "" && @profile.longitude != 0)) %>
   <tr>
     <td><%= t(:localization) %></td>
-    <td><img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @profile.latitude %>,<%= @profile.longitude %>&zoom=16&size=520x400&markers=color:red%7Ccolor:blue%7C<%= @profile.latitude %>,<%= @profile.longitude %>&sensor=true"></td>
+    <td>
+      <div id="map" style="width: 520px; height: 400px">
+      <script type="text/javascript">
+        load();
+      </script>
+      </div>
+    </td>
   </tr>
   <% end %>
 </table>
+
 <br />
 <%= link_to t(:profile_edit), edit_users_profile_path(@profile.profile_id) %>

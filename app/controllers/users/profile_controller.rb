@@ -10,9 +10,10 @@ class Users::ProfileController < ApplicationController
         redirect_to edit_users_profile_path
       else
         @profile = Profile.find_by_user_id(current_user)
+        @myspot = (Spot.find_by_spot_id(UserSpots.find_by_user_id(current_user.id).spot_id))
         respond_to do |format|
         format.html # index.html.erb
-        format.json { render json: @profile }
+        format.json { render json: [@profile, @myspot] }
         end
       end
     else
