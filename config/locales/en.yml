@@ -30,6 +30,8 @@ en:
   spots: "Spots"
   longitude: "Longitude"
   latitude: "Latitude"
+  join: "Join"
+  actual_position: "Actual Position"
   # Faculties
   faculty_prohibited_saved: "prohibited this faculty from being saved:"
   faculty_successfully_created: "Faculty was successfully created."

@@ -1,3 +1,47 @@
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyA10fXXCcUlnAexw3VyD0AjV4tQ8nc&sensor=false" type="text/javascript"></script>
+<script type="text/javascript">
+  var browserSupportFlag =  new Boolean();
+  var geocoder;
+  var map;
+  var latlng;
+  //The address that you want to show in Google Maps
+  <% if (@spot.latitude != nil && @spot.longitude != nil) %>
+  latlng = new google.maps.LatLng(<%= @spot.latitude %>, <%= @spot.longitude %>);
+  <% else %>
+  latlng = new google.maps.LatLng(0, 0);
+  <% end %>
+  function initialize() {
+    var myOptions = {
+      zoom: 15,
+      center: latlng,
+      mapTypeControl: true,
+      mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+      },
+      zoomControl: true,
+      zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.LARGE
+      },
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"), myOptions);
+    geocoder = new google.maps.Geocoder();
+    map.setZoom(15);
+    var marker = new google.maps.Marker({
+      position: latlng, 
+      map: map
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+      map.setZoom(17);
+    });
+    var infowindow = new google.maps.InfoWindow({
+      content: '<b>Spot:</b><%= @spot.name %><br/><b>Local:</b><%= @spot.local %>',
+      size: new google.maps.Size(50,50),
+      position: latlng
+    });
+    infowindow.open(map);
+  }
+</script>
 <h1><%= t(:spot_show) %></h1>
 
 <%= hidden_field_tag :direction, params[:direction] %>
@@ -13,6 +57,10 @@
   </tr>
 <% end %>
 </table>
-
+<div id="map" style="width: 520px; height: 400px">
+      <script type="text/javascript">
+        initialize();
+      </script>
+      </div>
 <%= link_to t(:edit), edit_spot_path(@spots) %> |
 <%= link_to t(:back), spots_path %>

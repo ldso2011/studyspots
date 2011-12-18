@@ -7,7 +7,7 @@ class Spot < ActiveRecord::Base
   belongs_to :user
   belongs_to :discipline
   
-  attr_accessible :spot_id, :discipline_id, :user_id, :name, :local
+  attr_accessible :spot_id, :discipline_id, :user_id, :name, :local, :latitude, :longitude
   
   def self.search(search)
     if search

@@ -64,7 +64,7 @@ class SpotsController < ApplicationController
     @spot = Spot.find(params[:id])
 
     respond_to do |format|
-      if @spot.update_attributes(params[:course])
+      if @spot.update_attributes(params[:spot])
         format.html { redirect_to @spot, notice: t(:course_successfully_updated) }
         format.json { head :ok }
       else

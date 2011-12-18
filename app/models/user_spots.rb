@@ -6,6 +6,7 @@ class UserSpots < ActiveRecord::Base
   # Relações entre 'Models'.
   belongs_to :user
   belongs_to :spot
+  #has_many :profiles, :through => :user
   validates_uniqueness_of :user_id
   attr_accessible :user_spots_id, :spot_id, :user_id
 end

@@ -41,6 +41,23 @@ class Users::DisciplinesController < ApplicationController
     end
   end
   
+  # POST /disciplines/1/spots/2/leave
+  # POST /disciplines/1/spots/2/leave.json
+  def leave
+    @userspot = UserSpots.find_by_user_id(current_user.id)
+    @userspot.destroy
+
+    respond_to do |format|
+      if @userspot.save
+        format.html { redirect_to users_disciplines_path, notice: t(:discipline_successfully_created) }
+        format.json { render json: @userspot, status: :created, location: @userspot }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @userspot.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  
   # GET /disciplines/1
   # GET /disciplines/1.json
   def show

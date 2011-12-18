@@ -25,6 +25,7 @@ StudySpots::Application.routes.draw do
   match '(:locale)/users/profile/new' => "users/profile#create" 
   match '(:locale)/users/disciplines/:id/spots' => "users/disciplines#spots" 
   match '(:locale)/users/disciplines/:id/spots/:id2/join' => "users/disciplines#join"
+  match '(:locale)/users/disciplines/:id/spots/:id2/leave' => "users/disciplines#leave"
   match '(:locale)/users/disciplines/:id/delete' => "users/disciplines#destroy" 
   match '(:locale)/users/disciplines/new' => "users/disciplines#create" 
   match ':locale/' => "pages#home"
