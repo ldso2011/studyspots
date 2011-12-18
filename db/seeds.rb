@@ -202,3 +202,18 @@ SPOT1 = Spot.create!(
   :discipline_id => LDSO.discipline_id,
   :user_id => ADMIN.id
 )
+
+# WallDisciplines
+WallDisciplines.delete_all
+WDCOM1 = WallDisciplines.create!(
+  :wall_disciplines_id => UUIDTools::UUID.timestamp_create().to_s,
+  :discipline_id => LDSO.discipline_id,
+  :user_id => ADMIN.id,
+  :comment => "Está disciplina é mesmo fácil!"
+)
+WDCOM2 = WallDisciplines.create!(
+  :wall_disciplines_id => UUIDTools::UUID.timestamp_create().to_s,
+  :discipline_id => LDSO.discipline_id,
+  :user_id => ADMIN.id,
+  :comment => "Mas dá muito trabalho!"
+)

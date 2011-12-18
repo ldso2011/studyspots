@@ -8,26 +8,27 @@
     </tr>
     <tr>
       <td><%= t(:faculty) %></td>
-      <td><%= @user_disciplines.course.faculty.acronym + " - " + @user_disciplines.course.faculty.name %></td>
+      <td><%= @discipline.course.faculty.acronym + " - " + @discipline.course.faculty.name %></td>
     </tr>
     <tr>
       <td><%= t(:name) %></td>
-      <td><%= @user_disciplines.name %></td>
+      <td><%= @discipline.acronym + " - " + @discipline.name %></td>
     </tr>
+  </table>
+  <table>
     <tr>
-      <td><%= t(:acronym) %></td>
-      <td><%= @user_disciplines.acronym %></td>
+      <th>user</th>
+      <th>comment</th>
+      <th>data</th>
     </tr>
-    <tr>
-      <td><%= t(:course_degree) %></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><%= t(:course_begin) %></td>
-      <td></a></td>
-    </tr>
+    <% @walldiscipline.each do |comment| %>
+      <tr><% @person = Profile.find_by_user_id(comment.user_id) %>
+        <td><%= @person.first_name + " " + @person.last_name%></td>
+        <td><%= comment.comment %></td>
+        <td><%= comment.updated_at %></td>
+      </tr>
+    <% end %>
   </table>
 </div>
 
-<%= link_to t(:edit), edit_discipline_path(@user_disciplines) %> |
-<%= link_to t(:back), disciplines_path %>
+<%= link_to t(:back), users_disciplines_path %>

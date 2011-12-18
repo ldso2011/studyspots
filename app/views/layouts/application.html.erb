@@ -40,6 +40,19 @@
   <%= yield %>
         </section>
     </div>
+  <div class="container">
+  <section id="footer" class="round" style="text-align:center;">
+    <%= link_to "Home", root_path %>
+    | <%= link_to "Privacy", privacy_path %>
+    | <%= link_to "Contact", contact_path %>
+    | <%= link_to "About", about_path %>
+    <% if user_signed_in? %>
+      <% if current_user.admin == true %>
+       | <%= link_to "Painel Administração", administration_path %>
+      <% end %>
+    <% end %>
+  </section>
+  </div>
    <%= yield :scripts %>
 </body>
 </html>

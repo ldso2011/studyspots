@@ -3,6 +3,9 @@ class PagesController < ApplicationController
 
   def home
   end
+  
+  def administration
+  end
 
   def contact
   end

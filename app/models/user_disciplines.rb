@@ -7,5 +7,5 @@ class UserDisciplines < ActiveRecord::Base
   belongs_to :user
   belongs_to :discipline
   validates_uniqueness_of :user_id, :scope => :discipline_id
-  attr_accessible :user_disciplines_id, :discipline_id, :user_id
+  attr_accessible :user_disciplines_id, :discipline_id, :user_id, :comment
 end

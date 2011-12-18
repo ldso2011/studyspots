@@ -58,14 +58,15 @@ class Users::DisciplinesController < ApplicationController
     end
   end
   
-  # GET /disciplines/1
-  # GET /disciplines/1.json
+  # GET /disciplines/1/show
+  # GET /disciplines/1/show.json
   def show
-    @userdisciplines = UserDisciplines.find(params[:id])
-
+    @discipline = Discipline.find(params[:id])
+    @walldiscipline = WallDisciplines.find_all_by_discipline_id(params[:id], :limit=> 10, :order => "updated_at DESC")
+   
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @userdisciplines }
+      format.json { render json: [@discipline, @walldiscipline] }
     end
   end
 
