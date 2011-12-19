@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
-  before_filter :authenticate_user!, :except => [:home, :contact, :privacy, :about], :create_user_profile
+  before_filter :authenticate_user!, :except => [:home, :contact, :privacy, :about]
+  before_filter :create_user_profile!
 
   def home
   end
@@ -16,8 +17,8 @@ class PagesController < ApplicationController
   def about
   end
   
-   private
-  def create_user_profile
+  protected
+  def create_user_profile!
     if Profile.find_by_user_id(current_user.id) == nil
       redirect_to users_profile_index_path
     end
