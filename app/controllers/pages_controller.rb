@@ -19,8 +19,10 @@ class PagesController < ApplicationController
   
   protected
   def create_user_profile!
-    if Profile.find_by_user_id(current_user.id) == nil
-      redirect_to users_profile_index_path
+    if !!current_user
+      if Profile.find_by_user_id(current_user.id) == nil
+        redirect_to users_profile_index_path
+      end
     end
   end
 end
