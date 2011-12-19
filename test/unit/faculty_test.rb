@@ -8,7 +8,7 @@ class FacultyTest < ActiveSupport::TestCase
     faculty.faculty_type = 0
     faculty.name = "Faculdade de Engenharia da Universidade do Porto"
     faculty.url = "http://www.fe.up.pt/"
-    assert faculty.save, "Nao inseriu!"
+    assert !faculty.save, "Nao inseriu!"
   end
   test "Dont_Insert_Faculty_Without_Id" do
     faculty = Faculty.new
