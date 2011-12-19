@@ -10,6 +10,8 @@ class Faculty < ActiveRecord::Base
   
   validates_uniqueness_of :name, :acronym
   
+  validates :faculty_id, :name, :presence => true
+  
   def self.search(search)
     if search
       where('name LIKE ?', "%#{search}%")
