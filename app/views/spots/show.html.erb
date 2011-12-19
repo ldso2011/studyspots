@@ -67,6 +67,8 @@
 <% if UserSpots.find_by_user_id(current_user.id) == nil %>
 | <%= link_to t(:join),"../users/disciplines/" + @spot.discipline_id + "/spots/" + @spot.spot_id + "/join"  %>
 <% end %>
-<% if (UserSpots.find_by_user_id(current_user.id)).spot_id == @spot.spot_id %>
-| <%= link_to t(:leave),"../users/disciplines/" + @spot.discipline_id + "/spots/" + @spot.spot_id + "/leave"  %>
+<% if UserSpots.find_by_user_id(current_user.id) != nil %>
+  <% if (UserSpots.find_by_user_id(current_user.id)).spot_id == @spot.spot_id %>
+  | <%= link_to t(:leave),"../users/disciplines/" + @spot.discipline_id + "/spots/" + @spot.spot_id + "/leave"  %>
+  <% end %>
 <% end %>

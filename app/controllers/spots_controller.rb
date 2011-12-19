@@ -51,6 +51,11 @@ class SpotsController < ApplicationController
 
     respond_to do |format|
       if @spot.save
+        @userspot = UserSpots.new()
+        @userspot.user_spots_id = UUIDTools::UUID.timestamp_create().to_s
+        @userspot.spot_id = @spot.spot_id
+        @userspot.user_id = current_user.id
+        @userspot.save
         format.html { redirect_to @spot, notice: t(:spot_successfully_created) }
         format.json { render json: @spot, status: :created, location: @spot }
       else
