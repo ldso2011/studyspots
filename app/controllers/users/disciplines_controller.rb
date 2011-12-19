@@ -33,7 +33,7 @@ class Users::DisciplinesController < ApplicationController
     respond_to do |format|
       if @userspot.save
         format.html { redirect_to users_disciplines_path, notice: t(:discipline_successfully_created) }
-        format.json { render json: @userspot, status: :created, location: @userspot }
+        format.json { render json: @userspot, status: :created }
       else
         format.html { render action: "new" }
         format.json { render json: @userspot.errors, status: :unprocessable_entity }

@@ -42,7 +42,7 @@
     infowindow.open(map);
   }
 </script>
-<h1><%= t(:spot_show) %></h1>
+<h1><%= @spot.name %> @ <%= @spot.local %></h1>
 
 <%= hidden_field_tag :direction, params[:direction] %>
 <%= hidden_field_tag :sort, params[:sort] %>
@@ -52,8 +52,8 @@
   </tr>
 
 <% @users.each do |user| %>
-  <tr>
-    <td><%= Profile.find_by_user_id(user.user_id).first_name %></td>
+  <tr><% @person = Profile.find_by_user_id(user.user_id) %>
+    <td><%= @person.first_name + " " + @person.last_name %></td>
   </tr>
 <% end %>
 </table>
@@ -64,3 +64,9 @@
       </div>
 <%= link_to t(:edit), edit_spot_path(@spots) %> |
 <%= link_to t(:back), spots_path %>
+<% if UserSpots.find_by_user_id(current_user.id) == nil %>
+| <%= link_to t(:join),"../users/disciplines/" + @spot.discipline_id + "/spots/" + @spot.spot_id + "/join"  %>
+<% end %>
+<% if (UserSpots.find_by_user_id(current_user.id)).spot_id == @spot.spot_id %>
+| <%= link_to t(:leave),"../users/disciplines/" + @spot.discipline_id + "/spots/" + @spot.spot_id + "/leave"  %>
+<% end %>
