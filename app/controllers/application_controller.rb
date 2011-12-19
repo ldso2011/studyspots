@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   # Activa a proteção de falsificação de solicitação.
   protect_from_forgery :secret => '78c0ab0fdb009a67d6b0ca5add7739cc'
   # Antes de executar define a linguagem (Também pode ser utilizado para permissões).
-  before_filter :set_locale
+  before_filter :set_locale, :prepare_for_mobile
   # Define a linguagem do site.
   def set_locale
     if(user_signed_in?)
@@ -27,5 +27,20 @@ class ApplicationController < ActionController::Base
   # Linguagem por defeito do site.
   def default_url_options(options={})
     { :locale => I18n.locale }
+  end
+  
+  private
+  def mobile_device?
+    if session[:mobile_param]
+      session[:mobile_param] == "1"
+    else
+      request.user_agent =~ /Mobile|webOS/
+    end
+  end
+  helper_method :mobile_device?
+
+  def prepare_for_mobile
+    session[:mobile_param] = params[:mobile] if params[:mobile]
+    request.format = :mobile if mobile_device?
   end
 end

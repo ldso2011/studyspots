@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StudySpots</title>
+  <title><%= h(yield(:title) || "Untitled") %></title>
+    <%= stylesheet_link_tag "/assets/jqtouch/jqtouch.css", "/assets/jqtouch/themes/apple/theme.css" %>
+    <%= javascript_include_tag "/assets/jqtouch/jquery-1.4.2.min.js", "/assets/jqtouch/jqtouch.js", "mobile" %>
+    <%= yield(:head) %>
+  </head>
+<body>
+	
+	<div class="container">
+      <header>
+        <%=link_to image_tag("logo.png", :alt => "Sample App", :class => "round"), root_path %>
+        <nav class="round">
+          <ul>
+						
+            <li><%= link_to "Home", '/' %></li>
+            <% if user_signed_in? %>
+            <li><%= link_to current_user.email, users_profile_index_path %> <%= link_to "(Log out)", destroy_user_session_path, :method => :get %></li>
+            
+            <% else %>
+            <li><%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Log in", new_user_session_path %></li>
+            
+            <li>
+              <%= link_to(image_tag('flags/pt.png', :size => "16x16", :class => "flagsimg", :alt => t(:show)), :locale => "pt") %>
+              <%= link_to(image_tag('flags/en.png', :size => "16x16", :class => "flagsimg", :alt => t(:show)), :locale => "en") %>
+            </li><% end %>
+          </ul>
+        </nav>
+      </header>
+      <section class="round">
+  <%= yield %>
+        </section>
+    </div>
+  <div class="container">
+  <section id="footer" class="round" style="text-align:center;">
+    <%= link_to "Home", root_path %>
+    | <%= link_to "Privacy", privacy_path %>
+    | <%= link_to "Contact", contact_path %>
+    | <%= link_to "About", about_path %>
+    <% if user_signed_in? %>
+      <% if current_user.admin == true %>
+       | <%= link_to "Painel Administração", administration_path %>
+      <% end %>
+    <% end %>
+ <% if mobile_device? %>
+    | <%= link_to "Full Site", :mobile => 0 %>
+  <% else %>
+    | <%= link_to "Mobile Site", :mobile => 1 %>
+  <% end %>     
+  </section>
+  </div>
+   <%= yield :scripts %>
+</body>
+</html>

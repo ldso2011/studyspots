@@ -18,10 +18,11 @@ class SpotsController < ApplicationController
   def show
     @spot = Spot.find(params[:id])
     @users = UserSpots.find_all_by_spot_id(params[:id])
-    
+    @profiles = []
+    @users.each { |item| @profiles << Profile.find_by_user_id(item.user_id) }
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: [@spot, @users] }
+      format.json { render json: [@spot, @profiles] }
       end
   end
 

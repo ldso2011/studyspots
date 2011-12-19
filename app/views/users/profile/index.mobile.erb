@@ -1,0 +1,109 @@
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyA10fXXCcUlnAexw3VyD0AjV4tQ8nc&sensor=false" type="text/javascript"></script>
+<script type="text/javascript">
+  var browserSupportFlag =  new Boolean();
+  var geocoder;
+  var map;
+  var latlng;
+  //The address that you want to show in Google Maps
+  <% if (@profile.latitude != nil && @profile.longitude != nil) %>
+  latlng = new google.maps.LatLng(<%= @profile.latitude %>, <%= @profile.longitude %>);
+  <% else %>
+  latlng = new google.maps.LatLng(0, 0);
+  <% end %>
+  function initialize() {
+    var myOptions = {
+      zoom: 15,
+      center: latlng,
+      mapTypeControl: true,
+      mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+      },
+      zoomControl: true,
+      zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.LARGE
+      },
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"), myOptions);
+    geocoder = new google.maps.Geocoder();
+    map.setZoom(15);
+    var marker = new google.maps.Marker({
+      position: latlng, 
+      map: map
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+      map.setZoom(17);
+    });
+    var infowindow = new google.maps.InfoWindow({
+      content: '<b><%= t(:actual_position) %>!</b>',
+      size: new google.maps.Size(50,50),
+      position: latlng
+    });
+    infowindow.open(map);
+  }
+</script>
+
+<ul>
+  <li class="">
+    <%= t(:name) %>
+    <small class="counter"><%= @profile.first_name %> <%= @profile.last_name %></small>
+  </li>
+  <li class="arrow">
+    <%= t(:email) %>
+    <small class="counter"><%= current_user.email %></small>
+  </li>
+  <li class="arrow">
+    <%= t(:faculty) %>
+    <small class="counter"><%= @profile.faculty.acronym %> - <%= @profile.faculty.name %></small>
+  </li>
+  <li class="arrow">
+    <%= t(:course) %>
+    <small class="counter"><%= @profile.course.acronym %> - <%= @profile.course.name %></small>
+  </li>
+  <li class="arrow">
+    <%= t(:year) %>
+    <small class="counter"><%= @profile.year %></small>
+  </li>
+  <li class="arrow">
+    <%= t(:language) %>
+    <small class="counter"><%= image_tag('flags/' + @profile.language + '.png', :size => "16x16", :class => "flagsimg", :alt => t(:show)) %></small>
+  </li>
+  <% if(UserSpots.find_by_user_id(current_user.id) != nil) %>
+  <li class="arrow">
+    <%= t(:spot) %>
+    <small class="counter"><%= @myspot.name %> @ <%= @myspot.local %></small>
+  </li>
+  <% end %>
+  <% if((@profile.local != nil && @profile.local != "" && @profile.local != 0)) %>
+  <li class="arrow">
+    <%= t(:local) %>
+    <small class="counter"><%= @profile.local %></small>
+  </li>
+  <% end %>
+  <% if((@profile.latitude != nil && @profile.latitude != "" && @profile.latitude != 0) && (@profile.longitude != nil && @profile.longitude != "" && @profile.longitude != 0)) %>
+  <li class="arrow">
+    <%= t(:localization) %>
+    <small class="counter">
+      <div id="map" style="width: 520px; height: 400px">
+        <script type="text/javascript">
+          initialize();
+        </script>
+      </div>
+    </small>
+  </li>
+  <% end %>
+</ul>
+<ul>
+  <li class="arrow">
+    <%= link_to t(:profile_edit), edit_users_profile_path(@profile.profile_id) %>
+  </li>
+</ul>
+
+
+<h1><%= t(:profile) %></h1>
+<table class="pretty">
+  <tr>
+    <th><%= t(:parameters) %></th>
+    <th><%= t(:description) %></th>
+  </tr>
+</table>
