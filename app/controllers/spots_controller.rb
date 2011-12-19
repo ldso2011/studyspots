@@ -85,10 +85,11 @@ class SpotsController < ApplicationController
   # DELETE /spots/1.json
   def destroy
     @spot = Spot.find(params[:id])
-    @spot.destroy
-
+    if current_user.admin == true
+      @spot.destroy
+    end
     respond_to do |format|
-      format.html { redirect_to courses_url }
+      format.html { redirect_to spots_url }
       format.json { head :ok }
     end
   end
