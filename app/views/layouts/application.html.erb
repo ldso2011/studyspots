@@ -22,7 +22,12 @@
         <%=link_to image_tag("logo.png", :alt => "Sample App", :class => "round"), root_path %>
         <nav class="round">
           <ul>
-						
+            <% if user_signed_in? %>
+              <% if(UserSpots.find_by_user_id(current_user.id) != nil) %>
+                <% @myspot2 = Spot.find_by_spot_id((UserSpots.find_by_user_id(current_user.id)).spot_id) %>
+                <li><%= link_to 'MySpot' , '/spots/'+@myspot2.spot_id %></li>
+              <% end %>		
+            <% end %>
             <li><%= link_to "Home", '/' %></li>
             <% if user_signed_in? %>
             <li><%= link_to current_user.email, users_profile_index_path %> <%= link_to "(Log out)", destroy_user_session_path, :method => :get %></li>

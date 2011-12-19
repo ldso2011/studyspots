@@ -53,7 +53,7 @@
 
 <% @users.each do |user| %>
   <tr><% @person = Profile.find_by_user_id(user.user_id) %>
-    <td><%= @person.first_name + " " + @person.last_name %></td>
+    <td><%= link_to @person.first_name + " " + @person.last_name, users_profile_path(user.user_id) %></td>
   </tr>
 <% end %>
 </table>
