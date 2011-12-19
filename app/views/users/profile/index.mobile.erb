@@ -45,44 +45,44 @@
 
 <ul>
   <li class="">
-    <%= t(:name) %>
+    <%= t(:name) %><br/>
     <small class="counter"><%= @profile.first_name %> <%= @profile.last_name %></small>
   </li>
   <li class="arrow">
-    <%= t(:email) %>
+    <%= t(:email) %><br/>
     <small class="counter"><%= current_user.email %></small>
   </li>
   <li class="arrow">
-    <%= t(:faculty) %>
+    <%= t(:faculty) %><br/>
     <small class="counter"><%= @profile.faculty.acronym %> - <%= @profile.faculty.name %></small>
   </li>
   <li class="arrow">
-    <%= t(:course) %>
+    <%= t(:course) %><br/>
     <small class="counter"><%= @profile.course.acronym %> - <%= @profile.course.name %></small>
   </li>
   <li class="arrow">
-    <%= t(:year) %>
+    <%= t(:year) %><br/>
     <small class="counter"><%= @profile.year %></small>
   </li>
   <li class="arrow">
-    <%= t(:language) %>
+    <%= t(:language) %><br/>
     <small class="counter"><%= image_tag('flags/' + @profile.language + '.png', :size => "16x16", :class => "flagsimg", :alt => t(:show)) %></small>
   </li>
   <% if(UserSpots.find_by_user_id(current_user.id) != nil) %>
   <li class="arrow">
-    <%= t(:spot) %>
+    <%= t(:spot) %><br/>
     <small class="counter"><%= @myspot.name %> @ <%= @myspot.local %></small>
   </li>
   <% end %>
   <% if((@profile.local != nil && @profile.local != "" && @profile.local != 0)) %>
   <li class="arrow">
-    <%= t(:local) %>
+    <%= t(:local) %><br/>
     <small class="counter"><%= @profile.local %></small>
   </li>
   <% end %>
   <% if((@profile.latitude != nil && @profile.latitude != "" && @profile.latitude != 0) && (@profile.longitude != nil && @profile.longitude != "" && @profile.longitude != 0)) %>
   <li class="arrow">
-    <%= t(:localization) %>
+    <%= t(:localization) %><br/>
     <small class="counter">
       <div id="map" style="width: 520px; height: 400px">
         <script type="text/javascript">
