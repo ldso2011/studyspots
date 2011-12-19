@@ -23,7 +23,11 @@
     </tr>
     <% @walldiscipline.each do |comment| %>
       <tr><% @person = Profile.find_by_user_id(comment.user_id) %>
+        <% if @person != nil %>
         <td><%= @person.first_name + " " + @person.last_name%></td>
+        <% else %>
+        <td>Desconhecido</td>
+        <% end %>
         <td><%= comment.comment %></td>
         <td><%= comment.updated_at %></td>
       </tr>
