@@ -10,7 +10,7 @@ class Faculty < ActiveRecord::Base
   
   validates_uniqueness_of :name, :acronym
   
-  validates :faculty_id, :name, :acronym, :faculty_type, :url, :presence => true
+  #validates :faculty_id, :name, :acronym, :faculty_type, :url, :presence => true
   
   def self.search(search)
     if search
