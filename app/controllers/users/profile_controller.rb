@@ -15,7 +15,7 @@ class Users::ProfileController < ApplicationController
         end
         respond_to do |format|
         format.html # index.html.erb
-        format.json { render json: [@profile.to_json(:include => [:faculty, :course]) , @myspot] }
+        format.json { render json: [@profile, @myspot]}
         end
       end
     else
